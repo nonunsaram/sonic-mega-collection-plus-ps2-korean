@@ -8,8 +8,14 @@
   "appendixCount": 1,
   "cover": "assets/manuals/sonic3/cover.jpg",
   "manifest": "data/manuals/sonic3.json",
-  "koreanBytes": 23033018,
   "downloads": [
+    {
+      "id": "korean",
+      "label": "한국어",
+      "pages": 25,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic3-ko.zip",
+      "bytes": 95853511
+    },
     {
       "id": "original",
       "label": "원본",

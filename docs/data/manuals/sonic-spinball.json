@@ -8,8 +8,14 @@
   "appendixCount": 1,
   "cover": "assets/manuals/sonic-spinball/cover.jpg",
   "manifest": "data/manuals/sonic-spinball.json",
-  "koreanBytes": 24128993,
   "downloads": [
+    {
+      "id": "korean",
+      "label": "한국어",
+      "pages": 12,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-spinball-ko.zip",
+      "bytes": 99113161
+    },
     {
       "id": "original",
       "label": "원본",

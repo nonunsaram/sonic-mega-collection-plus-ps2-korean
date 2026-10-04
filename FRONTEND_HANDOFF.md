@@ -12,7 +12,6 @@ docs/
   assets/js/data.js          JSON 읽기와 DOM 생성 공통 함수
   assets/js/catalog.js       목록, 검색, 체크섬 표시
   assets/js/reader.js        페이지 이동, 확대, 한 쪽씩 보기, 이어 보기, URL 및 키보드 처리
-  assets/js/zip.js           한국어 zip 만들기 (목록·뷰어 공용)
   assets/manuals/{id}/       cover.jpg, 001.jpg부터 시작하는 페이지
   assets/manuals/{id}/thumbs/ 뷰어 페이지 목록용 썸네일 (높이 360px)
   data/catalog.json          매뉴얼 목록
@@ -31,7 +30,7 @@ release/
 매뉴얼 공통 필드: `id`, `title`, `platform`, `sourceEdition`, `pageCount`, `manualPageCount`, `appendixCount`, `cover`, `manifest`.
 `collections[]`: 목록 화면의 컬렉션 구역(`mega`, `gems`)과 패치·안내 링크, 검증 정보 파일(`release`). 매뉴얼의 `collection`이 없으면 `mega`입니다.
 
-개별 매뉴얼 JSON의 `koreanBytes`는 한국어 페이지 JPG 합계, `downloads[]`는 GitHub 릴리스 `manual-files`의 원본·클린본 PNG zip입니다. 한국어 zip은 브라우저에서 사이트의 JPG를 묶어 만듭니다(`assets/js/zip.js`).
+개별 매뉴얼 JSON의 `downloads[]`는 GitHub 릴리스 `manual-files`의 한국어(`korean`)·원본(`original`)·클린본(`clean`) 무손실 PNG zip입니다. 한국어 zip은 한국어 PDF를 원본 해상도로 렌더링했고 부록까지 사이트와 같은 장수입니다. 원본·클린본 zip에는 부록이 없습니다.
 
 개별 매뉴얼 JSON에는 공통 필드와 `pages[]`가 있습니다. 페이지는 `number` (1부터 시작), `title`, `kind` (`manual` 또는 `appendix`), `image`, `thumb`, `width`, `height`를 가집니다. `thumb`이 없으면 뷰어는 `image`를 썸네일로 씁니다. 경로는 **docs 루트 기준** 상대 경로입니다. 페이지 순서는 JSON 배열 순서입니다. 실제 원본의 인쇄 쪽수와 웹 뷰어의 페이지 번호는 다를 수 있습니다.
 

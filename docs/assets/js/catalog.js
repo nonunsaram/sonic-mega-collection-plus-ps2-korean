@@ -1,5 +1,5 @@
 import { readJSON, element } from './data.js';
-import { downloadKoreanZip, megabytes } from './zip.js';
+const megabytes = bytes => `${Math.max(1, Math.round(bytes / 1048576))}MB`;
 const status = document.querySelector('#status');
 
 // 아카이브와 같은 떠오르는 물방울
@@ -21,7 +21,7 @@ const icon = () => {
 };
 
 // 매뉴얼마다 한국어·원본·클린본 zip 받기 버튼을 붙입니다.
-// 원본·클린본은 각 매뉴얼 데이터(downloads)의 GitHub 릴리스 주소, 한국어는 사이트의 JPG를 바로 묶습니다.
+// zip은 각 매뉴얼 데이터(downloads)에 있는 GitHub 릴리스 manual-files의 무손실 PNG입니다.
 async function attachFiles(book, node) {
   const files = element('div', 'manual-files');
   files.setAttribute('role', 'group');
@@ -30,23 +30,8 @@ async function attachFiles(book, node) {
   node.append(files);
   try {
     const manifest = await readJSON(book.manifest);
-    const korean = element('button', 'file-btn ko', '한국어');
-    korean.type = 'button';
-    korean.title = ['한국어', `${manifest.pages.length}장`, 'JPG', manifest.koreanBytes && megabytes(manifest.koreanBytes)].filter(Boolean).join(' · ');
-    korean.onclick = async () => {
-      if (korean.disabled) return;
-      korean.disabled = true;
-      try {
-        await downloadKoreanZip(manifest, (done, total) => { korean.textContent = `${done}/${total}`; });
-        korean.textContent = '한국어';
-      } catch (error) {
-        korean.textContent = '다시 시도';
-        korean.title = error.message;
-      } finally { korean.disabled = false; }
-    };
-    files.append(korean);
     for (const item of manifest.downloads ?? []) {
-      const link = element('a', 'file-btn', item.label);
+      const link = element('a', item.id === 'korean' ? 'file-btn ko' : 'file-btn', item.label);
       link.href = item.url;
       link.title = [item.label, `${item.pages}장`, '무손실 PNG', item.bytes && megabytes(item.bytes)].filter(Boolean).join(' · ');
       files.append(link);

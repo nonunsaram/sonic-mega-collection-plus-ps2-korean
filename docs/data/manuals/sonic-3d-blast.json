@@ -8,8 +8,14 @@
   "appendixCount": 1,
   "cover": "assets/manuals/sonic-3d-blast/cover.jpg",
   "manifest": "data/manuals/sonic-3d-blast.json",
-  "koreanBytes": 12092440,
   "downloads": [
+    {
+      "id": "korean",
+      "label": "한국어",
+      "pages": 11,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-3d-blast-ko.zip",
+      "bytes": 22406703
+    },
     {
       "id": "original",
       "label": "원본",

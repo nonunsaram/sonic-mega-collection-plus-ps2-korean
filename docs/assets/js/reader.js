@@ -1,5 +1,4 @@
 import { readJSON, element } from './data.js';
-import { downloadKoreanZip, pageFileName, megabytes } from './zip.js';
 
 const $ = selector => document.querySelector(selector);
 const body = document.body;
@@ -224,9 +223,12 @@ function syncThumbState() {
 }
 
 /* ── 받기 ─────────────────────────────── */
+// 받는 파일 이름은 일부 환경에서 한글이 깨지므로 영문 ID로 만듭니다.
+const pageFileName = index => `${String(index + 1).padStart(3, '0')}.${book.pages[index].image.split('.').pop()}`;
+const megabytes = bytes => `${Math.max(1, Math.round(bytes / 1048576))}MB`;
 
 function buildDownloads() {
-  // 작업용 원본·클린본은 무손실 PNG zip으로 GitHub 릴리스에 있습니다.
+  // 한국어·원본·클린본은 무손실 PNG zip으로 GitHub 릴리스에 있습니다.
   const extras = (book.downloads ?? []).map(item => {
     const link = element('a', 'menu-item');
     link.href = item.url;
@@ -238,12 +240,11 @@ function buildDownloads() {
     const note = element('p', 'menu-note', '클린본은 원본에서 글자만 지운 작업용 이미지입니다.');
     $('#download-extras').replaceChildren(...extras, note);
   }
-  $('#download-all-note').textContent = [`${book.pages.length}장`, 'JPG', book.koreanBytes && megabytes(book.koreanBytes)].filter(Boolean).join(' · ');
 }
 
 function updateDownloads() {
   $('#download-page').href = book.pages[current - 1].image;
-  $('#download-page').download = `${book.id}-ko-${pageFileName(book, current - 1)}`;
+  $('#download-page').download = `${book.id}-ko-${pageFileName(current - 1)}`;
   $('#download-page-note').textContent = `${current}페이지`;
 }
 
@@ -252,24 +253,6 @@ function toggleDownloads(force) {
   $('#download-menu').hidden = !open;
   $('#download').setAttribute('aria-expanded', String(open));
   if (open) toggleHelp(false);
-}
-
-let zipping = false;
-async function downloadAll() {
-  if (zipping) return;
-  zipping = true;
-  $('#download-all').disabled = true;
-  toggleDownloads(false);
-  try {
-    say('압축 파일을 준비하는 중입니다.', { sticky: true });
-    const name = await downloadKoreanZip(book, (done, total) => say(`페이지를 모으는 중입니다. ${done} / ${total}`, { sticky: true }));
-    say(`${name} 받기를 시작했습니다.`);
-  } catch (error) {
-    say(`${error.message} 잠시 후 다시 시도해 주세요.`, { error: true });
-  } finally {
-    zipping = false;
-    $('#download-all').disabled = false;
-  }
 }
 
 /* ── 입력 처리 ─────────────────────────── */
@@ -377,7 +360,6 @@ function bindControls() {
   $('#toggle-help').onclick = () => toggleHelp();
   $('#download').onclick = () => toggleDownloads();
   $('#download-page').onclick = () => toggleDownloads(false);
-  $('#download-all').onclick = downloadAll;
   document.addEventListener('pointerdown', event => {
     if (!event.target.closest('#download-menu, #download')) toggleDownloads(false);
   });
