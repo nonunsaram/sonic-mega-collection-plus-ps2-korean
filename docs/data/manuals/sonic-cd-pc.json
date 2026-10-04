@@ -91,7 +91,7 @@
     },
     {
       "number": 8,
-      "title": "링·아이템·스페셜 스테이지",
+      "title": "링·아이템·점수·스페셜 스테이지",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/008.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/008.jpg",
@@ -100,7 +100,7 @@
     },
     {
       "number": 9,
-      "title": "스페셜 스테이지 아이템·타임 어택",
+      "title": "스페셜 스테이지 아이템·장치 블록·타임 어택",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/009.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/009.jpg",
