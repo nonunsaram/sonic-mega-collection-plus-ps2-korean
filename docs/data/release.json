@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "releaseUrl": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/tag/v1.0.0",
+  "source": {
+    "filename": "Sonic Mega Collection Plus (Japan).iso",
+    "bytes": 4698767360,
+    "sha256": "0e7796a217555c9b02a9517e6474a81ffb1527673cd971abf2f15cd35e6866de"
+  },
+  "target": {
+    "filename": "SONIC_MEGA_COLLECTION_PLUS_KOREAN_1.0.0.iso",
+    "bytes": 4698767360,
+    "sha256": "81371cb4952ca2c58500f7979f14e8d2546f0e012cf5a3958e0fcd600c5df352"
+  },
+  "patch": {
+    "filename": "sonic-mega-collection-plus-ps2-korean-v1.0.0.xdelta",
+    "bytes": 112447476,
+    "sha256": "bd3f31af3675d84270dd8f3b76591554b8f67dee572390b887bf25a3aea6e213",
+    "xdelta_version": "3.2.1",
+    "legacy_header": true,
+    "roundtrip_sha256": "81371cb4952ca2c58500f7979f14e8d2546f0e012cf5a3958e0fcd600c5df352",
+    "roundtrip_verified": true
+  }
+}

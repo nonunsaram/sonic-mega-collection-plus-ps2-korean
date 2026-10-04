@@ -1,0 +1,205 @@
+{
+  "id": "sonic1",
+  "title": "소닉 더 헤지혹",
+  "platform": "메가 드라이브",
+  "sourceEdition": "일본어판",
+  "pageCount": 24,
+  "manualPageCount": 24,
+  "appendixCount": 0,
+  "cover": "assets/manuals/sonic1/cover.jpg",
+  "manifest": "data/manuals/sonic1.json",
+  "pages": [
+    {
+      "number": 1,
+      "title": "표지·뒤표지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/001.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 2,
+      "title": "소닉의 한마디",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/002.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 3,
+      "title": "목차",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/003.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 4,
+      "title": "스토리 장 표지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/004.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 5,
+      "title": "에그맨의 음모",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/005.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 6,
+      "title": "사우스 아일랜드의 위기",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/006.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 7,
+      "title": "조작 방법 장 표지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/007.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 8,
+      "title": "조작 방법",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/008.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 9,
+      "title": "플레이 방법 장 표지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/009.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 10,
+      "title": "게임 진행과 화면",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/010.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 11,
+      "title": "링·체크포인트·아이템",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/011.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 12,
+      "title": "점수와 스페셜 스테이지 입장",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/012.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 13,
+      "title": "스페셜 스테이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/013.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 14,
+      "title": "존 소개 장 표지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/014.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 15,
+      "title": "그린 힐",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/015.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 16,
+      "title": "마블",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/016.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 17,
+      "title": "스프링 야드·라비린스",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/017.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 18,
+      "title": "스타 라이트·스크랩 브레인",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/018.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 19,
+      "title": "적 캐릭터 장 표지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/019.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 20,
+      "title": "적 캐릭터 1",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/020.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 21,
+      "title": "적 캐릭터 2",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/021.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 22,
+      "title": "적 캐릭터 3",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/022.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 23,
+      "title": "적 캐릭터 4",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/023.jpg",
+      "width": 2256,
+      "height": 1960
+    },
+    {
+      "number": 24,
+      "title": "사용상 주의",
+      "kind": "manual",
+      "image": "assets/manuals/sonic1/024.jpg",
+      "width": 2256,
+      "height": 1960
+    }
+  ]
+}

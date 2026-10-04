@@ -1,0 +1,237 @@
+{
+  "id": "sonic2",
+  "title": "소닉 더 헤지혹 2",
+  "platform": "메가 드라이브",
+  "sourceEdition": "일본어판",
+  "pageCount": 28,
+  "manualPageCount": 28,
+  "appendixCount": 0,
+  "cover": "assets/manuals/sonic2/cover.jpg",
+  "manifest": "data/manuals/sonic2.json",
+  "pages": [
+    {
+      "number": 1,
+      "title": "표지·뒤표지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/001.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 2,
+      "title": "목차·프롤로그",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/002.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 3,
+      "title": "프롤로그·섬과 만남",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/003.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 4,
+      "title": "프롤로그·습격",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/004.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 5,
+      "title": "프롤로그·에그맨과 조작법",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/005.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 6,
+      "title": "기본 조작",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/006.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 7,
+      "title": "새 액션·게임 시작",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/007.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 8,
+      "title": "옵션·1인용 안내",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/008.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 9,
+      "title": "1인용·기본 규칙",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/009.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 10,
+      "title": "포인트 마커·스페셜 스테이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/010.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 11,
+      "title": "에메랄드·점수·이어하기",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/011.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 12,
+      "title": "아이템·대전 안내",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/012.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 13,
+      "title": "대전·존과 판정",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/013.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 14,
+      "title": "대전·스페셜 스테이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/014.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 15,
+      "title": "대전 아이템·존 안내",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/015.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 16,
+      "title": "에메랄드 힐·케미컬 플랜트",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/016.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 17,
+      "title": "아쿠아틱 루인·카지노 나이트",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/017.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 18,
+      "title": "힐 톱·미스틱 케이브",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/018.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 19,
+      "title": "오일 오션·메트로폴리스",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/019.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 20,
+      "title": "스카이 체이스·윙 포트리스",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/020.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 21,
+      "title": "캐릭터 소개 표지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/021.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 22,
+      "title": "마일즈 테일즈 프로워",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/022.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 23,
+      "title": "에그맨·토네이도·에그 모빌",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/023.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 24,
+      "title": "적 소개 1",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/024.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 25,
+      "title": "적 소개 2",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/025.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 26,
+      "title": "적 소개 3",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/026.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 27,
+      "title": "적 소개 4",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/027.jpg",
+      "width": 2320,
+      "height": 1960
+    },
+    {
+      "number": 28,
+      "title": "사용상 주의·안내",
+      "kind": "manual",
+      "image": "assets/manuals/sonic2/028.jpg",
+      "width": 2320,
+      "height": 1960
+    }
+  ]
+}

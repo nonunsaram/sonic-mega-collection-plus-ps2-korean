@@ -1,0 +1,101 @@
+{
+  "id": "sonic-3d-blast",
+  "title": "소닉 3D 블래스트",
+  "platform": "메가 드라이브",
+  "sourceEdition": "해외 메가 드라이브 영문판",
+  "pageCount": 11,
+  "manualPageCount": 10,
+  "appendixCount": 1,
+  "cover": "assets/manuals/sonic-3d-blast/cover.jpg",
+  "manifest": "data/manuals/sonic-3d-blast.json",
+  "pages": [
+    {
+      "number": 1,
+      "title": "표지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-3d-blast/001.jpg",
+      "width": 1768,
+      "height": 3072
+    },
+    {
+      "number": 2,
+      "title": "본문 1",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-3d-blast/002.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 3,
+      "title": "본문 2",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-3d-blast/003.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 4,
+      "title": "본문 3",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-3d-blast/004.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 5,
+      "title": "본문 4",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-3d-blast/005.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 6,
+      "title": "본문 5",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-3d-blast/006.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 7,
+      "title": "본문 6",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-3d-blast/007.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 8,
+      "title": "본문 7",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-3d-blast/008.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 9,
+      "title": "본문 8",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-3d-blast/009.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 10,
+      "title": "본문 9",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-3d-blast/010.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 11,
+      "title": "번역자 해설",
+      "kind": "appendix",
+      "image": "assets/manuals/sonic-3d-blast/011.jpg",
+      "width": 3536,
+      "height": 3072
+    }
+  ]
+}

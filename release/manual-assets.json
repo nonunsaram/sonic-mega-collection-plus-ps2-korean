@@ -1,0 +1,840 @@
+{
+  "pageCount": 139,
+  "bytes": 143696133,
+  "pages": [
+    {
+      "book": "sonic1",
+      "page": 1,
+      "sha256": "767e19689c07ccfc6eb69d3791a560073fa85abe84ccdca1cc6267c3be1bda30",
+      "bytes": 1123997
+    },
+    {
+      "book": "sonic1",
+      "page": 2,
+      "sha256": "a30eb5ac80b25ba051a9924d48335548ea1532a0c21490cee9e19c487092f35c",
+      "bytes": 405772
+    },
+    {
+      "book": "sonic1",
+      "page": 3,
+      "sha256": "d5800cb07c7bd142ea32674ac29bec9e41417b94e23ddef19edc335906fa784d",
+      "bytes": 814964
+    },
+    {
+      "book": "sonic1",
+      "page": 4,
+      "sha256": "6207fe56df9ab576813cbc74ab46c34ff1db40477818b27793828099e3ffdc6e",
+      "bytes": 432361
+    },
+    {
+      "book": "sonic1",
+      "page": 5,
+      "sha256": "c9e5a968f7ad3e41cb7bfc151908218d7ba494b9de9b4279e046ea7a088f7987",
+      "bytes": 1134467
+    },
+    {
+      "book": "sonic1",
+      "page": 6,
+      "sha256": "ac4161465818d86c80a1c79a881c6db107a66a00cce7c6863233ab2dc4c10e8c",
+      "bytes": 1131204
+    },
+    {
+      "book": "sonic1",
+      "page": 7,
+      "sha256": "27ec5c0b9ac7e805885f7ba62ca45b489327fa21ff88e1cfddcc7347ca7fc2d9",
+      "bytes": 309537
+    },
+    {
+      "book": "sonic1",
+      "page": 8,
+      "sha256": "832327644f68215f93ddc0bc273453c281f48612012a0c5339508f236a502beb",
+      "bytes": 1143137
+    },
+    {
+      "book": "sonic1",
+      "page": 9,
+      "sha256": "bd06bfc172bb6036b2304d38cd9c356be090158e9f0829b2318fd6bab870bb70",
+      "bytes": 386976
+    },
+    {
+      "book": "sonic1",
+      "page": 10,
+      "sha256": "e658dbbcb2ee7d3c23e8fc88cc503c2983d8ba6eb3b46d1dfb2dec1382166343",
+      "bytes": 1032548
+    },
+    {
+      "book": "sonic1",
+      "page": 11,
+      "sha256": "b4ffaf8ee66e05d2272f8582a71d1d6d3f7e4324c80e91b72bfb04bef9c4e303",
+      "bytes": 846698
+    },
+    {
+      "book": "sonic1",
+      "page": 12,
+      "sha256": "d8dd1c1ecbe218b101348ae1ff21d483f961fcdcc4f50b5897889b881bc1eccd",
+      "bytes": 1033574
+    },
+    {
+      "book": "sonic1",
+      "page": 13,
+      "sha256": "d4a050a522edec494e18323c0302a7e662160162fe469a214317299b46645ab4",
+      "bytes": 761556
+    },
+    {
+      "book": "sonic1",
+      "page": 14,
+      "sha256": "9297aca9df6456be68e68b243ef8a73f97610b5af1779a062b997b822201035d",
+      "bytes": 315969
+    },
+    {
+      "book": "sonic1",
+      "page": 15,
+      "sha256": "3c3a68c6583f0aa52ed32a46277f6ce63eecc1eafba781affd9dc6a9d7f38b65",
+      "bytes": 1036764
+    },
+    {
+      "book": "sonic1",
+      "page": 16,
+      "sha256": "1c7c2ce6304fc577985d11bfb983595067ba018b9f6a5a88375c5b677ab79147",
+      "bytes": 920780
+    },
+    {
+      "book": "sonic1",
+      "page": 17,
+      "sha256": "086d7478da2a910997cb47cc573e5bf1ed22a6525bbf2bdf80eee2b874da7a0c",
+      "bytes": 1192988
+    },
+    {
+      "book": "sonic1",
+      "page": 18,
+      "sha256": "d3c973238e19269b5e4998945b6a904f7e08768501cae4fb257188ddb2bb1798",
+      "bytes": 955105
+    },
+    {
+      "book": "sonic1",
+      "page": 19,
+      "sha256": "75e20a0577ca542b33e46443eb7569bc0ce8a2b8369badcb5763ff54ff049d67",
+      "bytes": 349994
+    },
+    {
+      "book": "sonic1",
+      "page": 20,
+      "sha256": "a21633b16c4ac1083b659b42a22913a0df9c419592fc971fa579bd6ef2477c4a",
+      "bytes": 1146785
+    },
+    {
+      "book": "sonic1",
+      "page": 21,
+      "sha256": "ddac145e8ca108a9f1d4767d69ca56c31c6305808143c3dc33bd9fdd63aeaf73",
+      "bytes": 1111137
+    },
+    {
+      "book": "sonic1",
+      "page": 22,
+      "sha256": "54a4cbf7f36f68736ae5fd6f739748eb759f306d5c66533fadec87f1289902de",
+      "bytes": 1064928
+    },
+    {
+      "book": "sonic1",
+      "page": 23,
+      "sha256": "023467e7fbd0fe6d1bc806857e440e1a7d5e955ae6992f5c31adfd9e5047d4f6",
+      "bytes": 1031744
+    },
+    {
+      "book": "sonic1",
+      "page": 24,
+      "sha256": "fda1645166283594a007760ae560a9bdfafbf5bb4be8b5768e42e5b40e7e1085",
+      "bytes": 864805
+    },
+    {
+      "book": "sonic2",
+      "page": 1,
+      "sha256": "3407fc23d504d599381af2a719b31844ba7aaa812d62a488136ba571ed85f6ac",
+      "bytes": 743020
+    },
+    {
+      "book": "sonic2",
+      "page": 2,
+      "sha256": "0985ed74f1125dc468a7603f917fb8c6f1f629995a5cf80609ea820e60ff6414",
+      "bytes": 677052
+    },
+    {
+      "book": "sonic2",
+      "page": 3,
+      "sha256": "0db2b04e96a54d3b851c4aab2a3df1cf36b31cb9c124d440f70413ec32fbd8cd",
+      "bytes": 1000567
+    },
+    {
+      "book": "sonic2",
+      "page": 4,
+      "sha256": "80a9ca9acd5de2bfc8ec39f3830876cb0ff70a0603a5229dd3ee9a7f6a9ed835",
+      "bytes": 990352
+    },
+    {
+      "book": "sonic2",
+      "page": 5,
+      "sha256": "3ef75e2422129fbc92ae4213d1e894b63c71d01a172f03284a6deb4360740d93",
+      "bytes": 862485
+    },
+    {
+      "book": "sonic2",
+      "page": 6,
+      "sha256": "3285ec850109b96c58e9508be98930ca2e51fde34d487c443ebde788caf5c51a",
+      "bytes": 857117
+    },
+    {
+      "book": "sonic2",
+      "page": 7,
+      "sha256": "39099eba5249689a00ee046152bc481d3717ea4000b439538a84f1f35affa262",
+      "bytes": 780000
+    },
+    {
+      "book": "sonic2",
+      "page": 8,
+      "sha256": "18f8bc8cc33e5ce685895b5d0119a799e2a532ca8bc6ab04b0950198887ccb6e",
+      "bytes": 890943
+    },
+    {
+      "book": "sonic2",
+      "page": 9,
+      "sha256": "d384d62b6227343f6dea2d30e818c9e4f4a0d9b2bae9c25a4d22668383e37f51",
+      "bytes": 777438
+    },
+    {
+      "book": "sonic2",
+      "page": 10,
+      "sha256": "115c8d802b1da9270db852beaf04067a4faee63f5fbe2d0a4ec617367b7e75cf",
+      "bytes": 796762
+    },
+    {
+      "book": "sonic2",
+      "page": 11,
+      "sha256": "a9cccd5987927381c46a9075db795ab8b2f9da291305957f779fdf3f7fc44e40",
+      "bytes": 720962
+    },
+    {
+      "book": "sonic2",
+      "page": 12,
+      "sha256": "63d6766fcf23a9b6730f08fdf71860d4b5ca57e74920a90419d9c81442e4ad75",
+      "bytes": 797497
+    },
+    {
+      "book": "sonic2",
+      "page": 13,
+      "sha256": "c1cd0ffe7ead979eea05f4a45eb60df7aaf15e029f4284967df6a7bff6bdc862",
+      "bytes": 745427
+    },
+    {
+      "book": "sonic2",
+      "page": 14,
+      "sha256": "316b1f34698b61df93fca53ee7d3b6cffc00f1ad8bb9757923b358ac0b057a1c",
+      "bytes": 743149
+    },
+    {
+      "book": "sonic2",
+      "page": 15,
+      "sha256": "c5005bb8a6868d891cb3873d4bc5a46db758970d2b913fb6a377674f63462363",
+      "bytes": 743861
+    },
+    {
+      "book": "sonic2",
+      "page": 16,
+      "sha256": "b0c950200a08fed9fb0f91833b98575ece415ef8ec03e48ab25991c7bdc2436f",
+      "bytes": 1387818
+    },
+    {
+      "book": "sonic2",
+      "page": 17,
+      "sha256": "7717f8e904005e3a0478f6d1cee6789e12c5d9827fa278c119381cd7cd232c95",
+      "bytes": 1184615
+    },
+    {
+      "book": "sonic2",
+      "page": 18,
+      "sha256": "50c2cc86ab7140b9feb96af2147f7d3d980b6dc86dd8f087af2799d6df32ab07",
+      "bytes": 1197899
+    },
+    {
+      "book": "sonic2",
+      "page": 19,
+      "sha256": "1b9f7d224911c6920361cf25cb12c6bd76098924b64b2529252d3cecb68dd378",
+      "bytes": 1171878
+    },
+    {
+      "book": "sonic2",
+      "page": 20,
+      "sha256": "9b83487fdf8e421ed018f2c9abaee74c53c291245f42bb30f872c22628d9ed53",
+      "bytes": 1028536
+    },
+    {
+      "book": "sonic2",
+      "page": 21,
+      "sha256": "03a7d536dba479605d8101b48c9a1219490f93147837479911f3e0fd3380d0c7",
+      "bytes": 1319749
+    },
+    {
+      "book": "sonic2",
+      "page": 22,
+      "sha256": "868b077fa36e9f3c627f54eabc3e02b74f97636eb880c1d1061b7c0f72f0a4f3",
+      "bytes": 909587
+    },
+    {
+      "book": "sonic2",
+      "page": 23,
+      "sha256": "51f371c8679856e0e896f13dc3d15e7628a480115e69dc455050fc49a023cafd",
+      "bytes": 790036
+    },
+    {
+      "book": "sonic2",
+      "page": 24,
+      "sha256": "e298e8ff5f7a3943a054b1b1b22cdfffc5cb087327f8435dfbd3c6614ea5883a",
+      "bytes": 740390
+    },
+    {
+      "book": "sonic2",
+      "page": 25,
+      "sha256": "3a8ee911d4e03fb0b4f24da0fd6add960877ffb9c0c1752d18de3330628ae029",
+      "bytes": 834098
+    },
+    {
+      "book": "sonic2",
+      "page": 26,
+      "sha256": "6322a078a53a1c798350b36c4fe3d73defede819e12dc8c8a015aadf0e360df3",
+      "bytes": 835030
+    },
+    {
+      "book": "sonic2",
+      "page": 27,
+      "sha256": "eb8afb8dd577d455bdbc7883ef8a1b6bc51fad8ca6dffaf38358e123fdd8cd8d",
+      "bytes": 875747
+    },
+    {
+      "book": "sonic2",
+      "page": 28,
+      "sha256": "cf4df905a2b888eb6b4a54650a571ee0a3257e3c3d83cf75993939a85a5a9831",
+      "bytes": 858910
+    },
+    {
+      "book": "sonic3",
+      "page": 1,
+      "sha256": "34715bcba74a3fd416588e6b076e373328665fd9ee16a055fc9ce025dc92e370",
+      "bytes": 981988
+    },
+    {
+      "book": "sonic3",
+      "page": 2,
+      "sha256": "f16bc6dbe294814d9220516a6e34a7e911fcc966b17c557655afe637ad0d1434",
+      "bytes": 801794
+    },
+    {
+      "book": "sonic3",
+      "page": 3,
+      "sha256": "64699572ace53c643d84bd5855fc4c5aec787ff2dec0f2a6f322b51c8af7d700",
+      "bytes": 992776
+    },
+    {
+      "book": "sonic3",
+      "page": 4,
+      "sha256": "19f8277fa1c69dfc25b4d5c78f7c54ff891c495dfe62a96b819498ccf6d9e67c",
+      "bytes": 918322
+    },
+    {
+      "book": "sonic3",
+      "page": 5,
+      "sha256": "a4d21dea472529bbed843d6764c4a148eba8da71fb28846cc107a21fb0084113",
+      "bytes": 948376
+    },
+    {
+      "book": "sonic3",
+      "page": 6,
+      "sha256": "43512c55325bfd0cd30d8b881f094af44a29ee7e65ebec5699380822c09021e8",
+      "bytes": 917209
+    },
+    {
+      "book": "sonic3",
+      "page": 7,
+      "sha256": "ed6d8e9401c97bbc29e8e169f0032bbaa2532c051b4fc55c80ddafd1f8f80a9c",
+      "bytes": 970309
+    },
+    {
+      "book": "sonic3",
+      "page": 8,
+      "sha256": "3aacc55a9b53e4b4f80368eb822561dc3de114605df39ff2252e04402499b1a5",
+      "bytes": 865575
+    },
+    {
+      "book": "sonic3",
+      "page": 9,
+      "sha256": "50e78fdf4238860e4e8c97e393c01e83d8f88eb1662d785dda88f1178b9b3e79",
+      "bytes": 767748
+    },
+    {
+      "book": "sonic3",
+      "page": 10,
+      "sha256": "7c7efd86ba9332e8c52f2baa8320c5ffe4f78294ab304ab3a5bccc4d17512794",
+      "bytes": 769113
+    },
+    {
+      "book": "sonic3",
+      "page": 11,
+      "sha256": "fdc33bbd95544e698cb58f314392837d06d098086be5e1c7a040c34992e3d09e",
+      "bytes": 908178
+    },
+    {
+      "book": "sonic3",
+      "page": 12,
+      "sha256": "21afbcdd19957804a42b05f8a40f19a50a2e5e32694720d093cfb2ea310e70a0",
+      "bytes": 917280
+    },
+    {
+      "book": "sonic3",
+      "page": 13,
+      "sha256": "e688cf15336aa65a230ea474ba3443d85052060101b08681fe0cea555ef4ebda",
+      "bytes": 771104
+    },
+    {
+      "book": "sonic3",
+      "page": 14,
+      "sha256": "3106255fbe4195ccb2a5c9b4b46db000ff3201c60e853ddaac3190e543c81c33",
+      "bytes": 887018
+    },
+    {
+      "book": "sonic3",
+      "page": 15,
+      "sha256": "db65dcd0ead28d79e7b65e4606d207da6371d7e73edd0ad14b665f6e52665d48",
+      "bytes": 1011863
+    },
+    {
+      "book": "sonic3",
+      "page": 16,
+      "sha256": "eb6a3b5ba636416e0aafc5cde44b55022ea49fd53cf4de0575c96d3c4ed9c15f",
+      "bytes": 879813
+    },
+    {
+      "book": "sonic3",
+      "page": 17,
+      "sha256": "9041cfe92e2a5f02af72e460e484b2fe717cb595aefa6b928b9e20a2ea7c0aee",
+      "bytes": 1024486
+    },
+    {
+      "book": "sonic3",
+      "page": 18,
+      "sha256": "0d271edd6ef307e4eb1f376d31c04318d2713b3ad76b44dc34a8ac6e5e3fc6e1",
+      "bytes": 945313
+    },
+    {
+      "book": "sonic3",
+      "page": 19,
+      "sha256": "3f613d041a8fd079121a6ba91edcfd4221d7c8a0913938ceffccdf67a4340898",
+      "bytes": 1120608
+    },
+    {
+      "book": "sonic3",
+      "page": 20,
+      "sha256": "d9d84367749565be27b1549f4c6efff3e51341916c6d9042b5704f6a13b5a61e",
+      "bytes": 953316
+    },
+    {
+      "book": "sonic3",
+      "page": 21,
+      "sha256": "048d62b713144559f14e21c9baeeee5f9612ea982a518403c38d60596a057edf",
+      "bytes": 1034551
+    },
+    {
+      "book": "sonic3",
+      "page": 22,
+      "sha256": "ab6ed4639d69c166b4a4c61930529f45a35d478ca9d2987dfd9f1c92309da698",
+      "bytes": 1070650
+    },
+    {
+      "book": "sonic3",
+      "page": 23,
+      "sha256": "3d376ee60421ee4fc2b2148eabaf1583d844733f30ad17e8640384a1f5462a8f",
+      "bytes": 986564
+    },
+    {
+      "book": "sonic3",
+      "page": 24,
+      "sha256": "929b0175cb9065fff5999279bf554c1c6969b8937d50d20bd22148411cc950b1",
+      "bytes": 869327
+    },
+    {
+      "book": "sonic3",
+      "page": 25,
+      "sha256": "de0023bbf3f015bd212ec84bec815e6aeaa3987533e166903e11afeca743c715",
+      "bytes": 719737
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 1,
+      "sha256": "ce1abd7890ba57d9be232aac53c84fa47f617d54d9454ee79c96d885a5796d63",
+      "bytes": 908791
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 2,
+      "sha256": "90c563bd646a6fd66412a86d64e9148c5ab659b4886c75124f704c6f73df2a58",
+      "bytes": 1010372
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 3,
+      "sha256": "33fa1e8e9ddfb5df8e45328417dfe61b127257f5e2b3eaf007ccc54f0bebda94",
+      "bytes": 806222
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 4,
+      "sha256": "fbe30d547119c7fdffcdb77b8d7cd89552471b791418173d1c74977cf52b4500",
+      "bytes": 795205
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 5,
+      "sha256": "e92e606a9de36b0ac45fae771e1323404202f351fbad2fd9b7844a11fdbfd52b",
+      "bytes": 953583
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 6,
+      "sha256": "c6f2851fa02d160bc560791eb7e6ca155a757e6d33026c7b8e18a38e7942de05",
+      "bytes": 762331
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 7,
+      "sha256": "eb6e48eef7681247cf9994c5511aff4d8cbf6a0ef9345e147ad8421ec5d06ff1",
+      "bytes": 931938
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 8,
+      "sha256": "b2a245b25054c161677252db44472999b11ce0a0d4ea367938ea06d7de98aa68",
+      "bytes": 893554
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 9,
+      "sha256": "7c9a257b885c197efbfecb60f7f3421040418d654d98f90dd3d3eed545e58299",
+      "bytes": 878255
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 10,
+      "sha256": "144ecdf9d261ff1822ef1431fb82e9ef18157c2ec3ccecba62838d81910e2359",
+      "bytes": 685332
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 11,
+      "sha256": "575331305c747d94b62484849414903674d5d2947e72f22a7d5c09b04b903138",
+      "bytes": 859079
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 12,
+      "sha256": "f7f92ccb08cd2b2f5a044f321e7c45aeefd6bc9f49cced58f284efc3475a62e1",
+      "bytes": 748496
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 13,
+      "sha256": "4fd4f09414f5c8c1bfebc487717148a9c3e876faf0b9a8e06c1c1f24fa112538",
+      "bytes": 828530
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 14,
+      "sha256": "25a366e3419d080948a82fa5fa28bca63374246af43bd8857ba14341c286f33e",
+      "bytes": 829195
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 15,
+      "sha256": "1fadf7ff720c71ba94704c78add9156423a30c8191d71b65882409f40e8190b0",
+      "bytes": 846561
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 16,
+      "sha256": "f785896040829156e13507b2b16abb6d822dd0389ffa7bc227357668c0f494e0",
+      "bytes": 782982
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 17,
+      "sha256": "ed2cad904e696889d99535ab61f2be5207523eaa814ae2a0ec352c8b1fdb821c",
+      "bytes": 903597
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 18,
+      "sha256": "6cd7300cb5f3414e85c1f6fda1692304573a9dfbeb27acaa0a27bac4a5850d03",
+      "bytes": 946890
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 19,
+      "sha256": "72a724a39c719e996ef9bfddd9f0dff6cf435dfc25941bda95951230692c4bc6",
+      "bytes": 999145
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 20,
+      "sha256": "58de075b1c10ab519f053646821b278386fe82fde9d7d9af53281ef620e83455",
+      "bytes": 638823
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 21,
+      "sha256": "90d95cdea30238bc85b545ac47f81e6ca31094f7ea1546a1e5f3fba26b128d0a",
+      "bytes": 772923
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 22,
+      "sha256": "282208bdc2387ac99cd5642b1ee7ea018c91b74812a8d7e3a9ec492129e62c49",
+      "bytes": 786055
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 23,
+      "sha256": "3019de8ab6cc4be60d3e761f7950e1d46fab6469bf3d5ff0d50abe9e54656bdc",
+      "bytes": 890638
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 24,
+      "sha256": "b3805c326eed9c7aa0013d7e436ebbb24f55b54a4741ff325aeb2f861e61a99d",
+      "bytes": 878248
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 25,
+      "sha256": "03fec87779240fea532d19868d408b2eb1ed7f4a4062a3207b42563c05e21101",
+      "bytes": 795524
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 26,
+      "sha256": "c1daf38b94b96a942fe7bbb1162757dc1509ef48108c0b8a221d545d1d662746",
+      "bytes": 1147196
+    },
+    {
+      "book": "sonic-and-knuckles",
+      "page": 27,
+      "sha256": "27460e7c85bcc34fd91dbaa6c026afd0c98f64a6564da9df0cd26feb40967ac8",
+      "bytes": 842818
+    },
+    {
+      "book": "sonic-spinball",
+      "page": 1,
+      "sha256": "5a4ecf6f0455cb606ca400eb0613ab3356db783b15dc3d0444db715de821af6e",
+      "bytes": 1198649
+    },
+    {
+      "book": "sonic-spinball",
+      "page": 2,
+      "sha256": "3881296f6263052acca80de8b36e68d9d656e497757705cd47d461dcf3566301",
+      "bytes": 2315649
+    },
+    {
+      "book": "sonic-spinball",
+      "page": 3,
+      "sha256": "dd5f35dee182a7ebafe68d289734a704df48f5c6d1943437a7dd89508437b385",
+      "bytes": 2411420
+    },
+    {
+      "book": "sonic-spinball",
+      "page": 4,
+      "sha256": "3b5ab23d0f92c87a271c3229f2e5bfc4b8428b33cbe8776f512dea2004e31936",
+      "bytes": 2163340
+    },
+    {
+      "book": "sonic-spinball",
+      "page": 5,
+      "sha256": "59e58b7e3be3da117a99ea9b6b088a5af7df0e666c13ed9f000b4ecba4fae992",
+      "bytes": 2432186
+    },
+    {
+      "book": "sonic-spinball",
+      "page": 6,
+      "sha256": "4ae1d6cda28694873b82c32fc6a5f55271d34a5ac9323f1230b0fdad2eee5228",
+      "bytes": 2317580
+    },
+    {
+      "book": "sonic-spinball",
+      "page": 7,
+      "sha256": "788f7deb48445340211b819cacbb1fb6b85dbef51b667e34fe393000031625b9",
+      "bytes": 2433896
+    },
+    {
+      "book": "sonic-spinball",
+      "page": 8,
+      "sha256": "527147422520c484fe2588f017ba47eaf8a2011ed78005017f9700f53a5d7788",
+      "bytes": 2414573
+    },
+    {
+      "book": "sonic-spinball",
+      "page": 9,
+      "sha256": "45259de2ccd57aad50325adb042cea17b0e3467e88061c6cae5f2f7711e0ea2e",
+      "bytes": 2463542
+    },
+    {
+      "book": "sonic-spinball",
+      "page": 10,
+      "sha256": "f7912e5ad216faca2cbfd4b1006b6383c60f838061719b7c5bf48dde8baf7497",
+      "bytes": 1276558
+    },
+    {
+      "book": "sonic-spinball",
+      "page": 11,
+      "sha256": "42c3a20e2995773e106a764bc9cc65f9b944f2394e8a948a61b797935d2ed864",
+      "bytes": 1172252
+    },
+    {
+      "book": "sonic-spinball",
+      "page": 12,
+      "sha256": "044c02c13a8366f00e230088325e62a46feed26ca6a6dc5cc9f7cb19b5c23727",
+      "bytes": 1529348
+    },
+    {
+      "book": "sonic-3d-blast",
+      "page": 1,
+      "sha256": "36b90b1d87295628b7f63d1bdadf3976274fc1570773be9b4892ef716a96c08b",
+      "bytes": 991867
+    },
+    {
+      "book": "sonic-3d-blast",
+      "page": 2,
+      "sha256": "ad2ee1743a2eb6382eb186779e87bca410db9bd497055d9ff64d3fdbd90977d2",
+      "bytes": 695288
+    },
+    {
+      "book": "sonic-3d-blast",
+      "page": 3,
+      "sha256": "275d2d2276d154248e9571a6b8d95b16f5ed383dd7fb8cc6f8d39b42f68ebdcf",
+      "bytes": 1370512
+    },
+    {
+      "book": "sonic-3d-blast",
+      "page": 4,
+      "sha256": "94039c0c32c58b72df8492355cc81426d7ab26799b582ce144d72dc9e5af4134",
+      "bytes": 1149615
+    },
+    {
+      "book": "sonic-3d-blast",
+      "page": 5,
+      "sha256": "6de7dfdfd9ba15b577a94356e4852c0b6c9c87b2c1d37ead59ecf38b9f64d339",
+      "bytes": 1333452
+    },
+    {
+      "book": "sonic-3d-blast",
+      "page": 6,
+      "sha256": "a5455a9621d8b009311e46a0300a93c1132c6baaa7fad12873c7bcd7dff69a76",
+      "bytes": 1363912
+    },
+    {
+      "book": "sonic-3d-blast",
+      "page": 7,
+      "sha256": "2a92221345ac7573314aa0daca4d9d8e73a18f09b26edcef80b45ad64e432a98",
+      "bytes": 1514054
+    },
+    {
+      "book": "sonic-3d-blast",
+      "page": 8,
+      "sha256": "de5c36da5777cffc78afd21a30d08411ebb39336fc29702f0bb750faccee066b",
+      "bytes": 950054
+    },
+    {
+      "book": "sonic-3d-blast",
+      "page": 9,
+      "sha256": "2b55b21472d2904217195ae499f4da22a587539da0992974f98397381c443382",
+      "bytes": 789224
+    },
+    {
+      "book": "sonic-3d-blast",
+      "page": 10,
+      "sha256": "fc7e2a76c9d3f5360dd559dae2c8c1e0e8f2101a5ba4c85182a12b67bcdffcd5",
+      "bytes": 320586
+    },
+    {
+      "book": "sonic-3d-blast",
+      "page": 11,
+      "sha256": "9745dc554741197694ee067b7d70c8e3c14a448850bc750078f9553e1173adfb",
+      "bytes": 1613876
+    },
+    {
+      "book": "mean-bean-machine",
+      "page": 1,
+      "sha256": "037c402929b002b6d63f56952f35decceb92734baac196ef3c681888d748a0e6",
+      "bytes": 1684636
+    },
+    {
+      "book": "mean-bean-machine",
+      "page": 2,
+      "sha256": "2fa7e22ccb88764dbe9cbc471861c5b6d37454200c4824d0be0e6f9e5b550cc4",
+      "bytes": 905355
+    },
+    {
+      "book": "mean-bean-machine",
+      "page": 3,
+      "sha256": "ed124b143f42bbf0f60f836caf86d633ebd32cc3547e7bd326337d74e99af541",
+      "bytes": 1121660
+    },
+    {
+      "book": "mean-bean-machine",
+      "page": 4,
+      "sha256": "e244bbef688fc5582800a0787a28ca362da048cfe964b21e301b5343258becae",
+      "bytes": 1340338
+    },
+    {
+      "book": "mean-bean-machine",
+      "page": 5,
+      "sha256": "3969d2117fd3cb5131b82a131e7ef232c4967c0beaac75ad2a8dfa22c92a4024",
+      "bytes": 1481109
+    },
+    {
+      "book": "mean-bean-machine",
+      "page": 6,
+      "sha256": "18f13f09b111c11050ab72ec1c34ff54fe96c79b451196e3b828172529de6fad",
+      "bytes": 1447672
+    },
+    {
+      "book": "mean-bean-machine",
+      "page": 7,
+      "sha256": "8e8efb833ed821726d6f706f963ede3648c5cc8d9def696bbf966b2e9dcfda7a",
+      "bytes": 1610741
+    },
+    {
+      "book": "mean-bean-machine",
+      "page": 8,
+      "sha256": "c84cb3a3620f6b625a227c1042f9a3717b64b1ca82cafa3e8284ce1b8bf115a0",
+      "bytes": 1317277
+    },
+    {
+      "book": "mean-bean-machine",
+      "page": 9,
+      "sha256": "3cd982c1777bbf83853bc4c0870b9af993711f80a5e0bafddba81ac617d005a3",
+      "bytes": 1124736
+    },
+    {
+      "book": "mean-bean-machine",
+      "page": 10,
+      "sha256": "fb81c11990d2ade2e386f7571e7a15b61853206b5fc8dcbd4b1f56881e2d4add",
+      "bytes": 320068
+    },
+    {
+      "book": "mean-bean-machine",
+      "page": 11,
+      "sha256": "0feb4db0c1e66bbf581da3c3f7f9846116629232ba8df72365112a122e4b6543",
+      "bytes": 1553460
+    },
+    {
+      "book": "mean-bean-machine",
+      "page": 12,
+      "sha256": "cf9c9af97fb6c8a3945febef36bdc69becc936fdc8d2a2b2a4d758244061f673",
+      "bytes": 1603632
+    }
+  ]
+}

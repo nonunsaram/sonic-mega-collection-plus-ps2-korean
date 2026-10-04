@@ -1,0 +1,213 @@
+{
+  "id": "sonic3",
+  "title": "소닉 더 헤지혹 3",
+  "platform": "메가 드라이브",
+  "sourceEdition": "일본어판",
+  "pageCount": 25,
+  "manualPageCount": 24,
+  "appendixCount": 1,
+  "cover": "assets/manuals/sonic3/cover.jpg",
+  "manifest": "data/manuals/sonic3.json",
+  "pages": [
+    {
+      "number": 1,
+      "title": "표지·뒤표지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/001.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 2,
+      "title": "목차",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/002.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 3,
+      "title": "프롤로그·떠 있는 섬",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/003.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 4,
+      "title": "에그맨의 음모·게임 시작",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/004.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 5,
+      "title": "조작 방법",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/005.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 6,
+      "title": "특수 액션",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/006.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 7,
+      "title": "1인용·데이터 선택",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/007.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 8,
+      "title": "1P 기본 규칙·화면 표시",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/008.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 9,
+      "title": "재시작·보너스·스페셜 링",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/009.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 10,
+      "title": "아이템",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/010.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 11,
+      "title": "액트 클리어·스페셜 스테이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/011.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 12,
+      "title": "스페셜 스테이지 규칙",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/012.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 13,
+      "title": "보너스 스테이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/013.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 14,
+      "title": "대전·게임 설정",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/014.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 15,
+      "title": "대전 코스·규칙",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/015.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 16,
+      "title": "대전 아이템·캐릭터 목록",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/016.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 17,
+      "title": "소닉·테일즈·에그맨",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/017.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 18,
+      "title": "너클즈 소개·이야기",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/018.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 19,
+      "title": "너클즈 이야기·적 캐릭터 1",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/019.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 20,
+      "title": "적 캐릭터 2·존 소개",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/020.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 21,
+      "title": "엔젤 아일랜드·하이드로시티",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/021.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 22,
+      "title": "마블 가든·카니발 나이트",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/022.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 23,
+      "title": "아이스캡·런치 베이스",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/023.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 24,
+      "title": "사용상 주의",
+      "kind": "manual",
+      "image": "assets/manuals/sonic3/024.jpg",
+      "width": 2272,
+      "height": 1960
+    },
+    {
+      "number": 25,
+      "title": "부록 - 현재 설정과 원본 매뉴얼의 오류",
+      "kind": "appendix",
+      "image": "assets/manuals/sonic3/025.jpg",
+      "width": 2272,
+      "height": 1960
+    }
+  ]
+}

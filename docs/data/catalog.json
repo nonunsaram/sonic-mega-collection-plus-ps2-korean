@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "updatedAt": "2026-10-04",
+  "manuals": [
+    {
+      "id": "sonic1",
+      "title": "소닉 더 헤지혹",
+      "platform": "메가 드라이브",
+      "sourceEdition": "일본어판",
+      "pageCount": 24,
+      "manualPageCount": 24,
+      "appendixCount": 0,
+      "cover": "assets/manuals/sonic1/cover.jpg",
+      "manifest": "data/manuals/sonic1.json"
+    },
+    {
+      "id": "sonic2",
+      "title": "소닉 더 헤지혹 2",
+      "platform": "메가 드라이브",
+      "sourceEdition": "일본어판",
+      "pageCount": 28,
+      "manualPageCount": 28,
+      "appendixCount": 0,
+      "cover": "assets/manuals/sonic2/cover.jpg",
+      "manifest": "data/manuals/sonic2.json"
+    },
+    {
+      "id": "sonic3",
+      "title": "소닉 더 헤지혹 3",
+      "platform": "메가 드라이브",
+      "sourceEdition": "일본어판",
+      "pageCount": 25,
+      "manualPageCount": 24,
+      "appendixCount": 1,
+      "cover": "assets/manuals/sonic3/cover.jpg",
+      "manifest": "data/manuals/sonic3.json"
+    },
+    {
+      "id": "sonic-and-knuckles",
+      "title": "소닉 & 너클즈",
+      "platform": "메가 드라이브",
+      "sourceEdition": "일본어판",
+      "pageCount": 27,
+      "manualPageCount": 26,
+      "appendixCount": 1,
+      "cover": "assets/manuals/sonic-and-knuckles/cover.jpg",
+      "manifest": "data/manuals/sonic-and-knuckles.json"
+    },
+    {
+      "id": "sonic-spinball",
+      "title": "소닉 스핀볼",
+      "platform": "메가 드라이브",
+      "sourceEdition": "일본어판",
+      "pageCount": 12,
+      "manualPageCount": 11,
+      "appendixCount": 1,
+      "cover": "assets/manuals/sonic-spinball/cover.jpg",
+      "manifest": "data/manuals/sonic-spinball.json"
+    },
+    {
+      "id": "sonic-3d-blast",
+      "title": "소닉 3D 블래스트",
+      "platform": "메가 드라이브",
+      "sourceEdition": "해외 메가 드라이브 영문판",
+      "pageCount": 11,
+      "manualPageCount": 10,
+      "appendixCount": 1,
+      "cover": "assets/manuals/sonic-3d-blast/cover.jpg",
+      "manifest": "data/manuals/sonic-3d-blast.json"
+    },
+    {
+      "id": "mean-bean-machine",
+      "title": "닥터 에그맨의 민빈 머신",
+      "platform": "메가 드라이브",
+      "sourceEdition": "해외 메가 드라이브 영문판",
+      "pageCount": 12,
+      "manualPageCount": 11,
+      "appendixCount": 1,
+      "cover": "assets/manuals/mean-bean-machine/cover.jpg",
+      "manifest": "data/manuals/mean-bean-machine.json"
+    }
+  ]
+}

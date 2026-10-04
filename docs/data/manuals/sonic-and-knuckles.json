@@ -1,0 +1,229 @@
+{
+  "id": "sonic-and-knuckles",
+  "title": "소닉 & 너클즈",
+  "platform": "메가 드라이브",
+  "sourceEdition": "일본어판",
+  "pageCount": 27,
+  "manualPageCount": 26,
+  "appendixCount": 1,
+  "cover": "assets/manuals/sonic-and-knuckles/cover.jpg",
+  "manifest": "data/manuals/sonic-and-knuckles.json",
+  "pages": [
+    {
+      "number": 1,
+      "title": "표지·뒤표지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/001.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 2,
+      "title": "인사말·목차",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/002.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 3,
+      "title": "록온 시스템·카트리지 연결",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/003.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 4,
+      "title": "연결 시 달라지는 점·록온 사용상 주의",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/004.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 5,
+      "title": "등장 캐릭터: 소닉·너클즈·에그맨",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/005.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 6,
+      "title": "마일즈·단독 플레이 구분",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/006.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 7,
+      "title": "프롤로그",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/007.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 8,
+      "title": "게임 시작·기본 조작",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/008.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 9,
+      "title": "특수 액션",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/009.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 10,
+      "title": "기본 규칙·화면 표시·컨티뉴",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/010.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 11,
+      "title": "재시작·보너스 스테이지·숨겨진 장소",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/011.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 12,
+      "title": "아이템·배리어·스페셜 어택",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/012.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 13,
+      "title": "액트 클리어·스페셜 스테이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/013.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 14,
+      "title": "스페셜 스테이지 공략",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/014.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 15,
+      "title": "보너스 스테이지 두 종류",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/015.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 16,
+      "title": "아이템 볼·일반 적 1",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/016.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 17,
+      "title": "일반 적 2·머시룸 힐",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/017.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 18,
+      "title": "플라잉 배터리·샌도폴리스·라바 리프",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/018.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 19,
+      "title": "스카이 생추어리·데스 에그·소닉 3 연결",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/019.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 20,
+      "title": "소닉 3 연결 시 게임 내용",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/020.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 21,
+      "title": "소닉 3 연결: 게임 시작·데이터 선택",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/021.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 22,
+      "title": "소닉 3 연결: 저장·캐릭터·삭제",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/022.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 23,
+      "title": "소닉 3 연결: 슈퍼 에메랄드",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/023.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 24,
+      "title": "소닉 3 연결: 보너스 스테이지·소닉 2 연결",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/024.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 25,
+      "title": "소닉 2 연결: 게임 내용·플레이 방법",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/025.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 26,
+      "title": "사용상 주의·당시 서비스 안내",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-and-knuckles/026.jpg",
+      "width": 2268,
+      "height": 1960
+    },
+    {
+      "number": 27,
+      "title": "번역자 부록 - 현재 설정과 당시 매뉴얼의 표현",
+      "kind": "appendix",
+      "image": "assets/manuals/sonic-and-knuckles/027.jpg",
+      "width": 2268,
+      "height": 1960
+    }
+  ]
+}

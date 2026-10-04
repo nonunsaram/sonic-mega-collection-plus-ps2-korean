@@ -1,0 +1,109 @@
+{
+  "id": "mean-bean-machine",
+  "title": "닥터 에그맨의 민빈 머신",
+  "platform": "메가 드라이브",
+  "sourceEdition": "해외 메가 드라이브 영문판",
+  "pageCount": 12,
+  "manualPageCount": 11,
+  "appendixCount": 1,
+  "cover": "assets/manuals/mean-bean-machine/cover.jpg",
+  "manifest": "data/manuals/mean-bean-machine.json",
+  "pages": [
+    {
+      "number": 1,
+      "title": "표지",
+      "kind": "manual",
+      "image": "assets/manuals/mean-bean-machine/001.jpg",
+      "width": 1772,
+      "height": 3072
+    },
+    {
+      "number": 2,
+      "title": "본문 1",
+      "kind": "manual",
+      "image": "assets/manuals/mean-bean-machine/002.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 3,
+      "title": "본문 2",
+      "kind": "manual",
+      "image": "assets/manuals/mean-bean-machine/003.jpg",
+      "width": 3536,
+      "height": 3072
+    },
+    {
+      "number": 4,
+      "title": "본문 3",
+      "kind": "manual",
+      "image": "assets/manuals/mean-bean-machine/004.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 5,
+      "title": "본문 4",
+      "kind": "manual",
+      "image": "assets/manuals/mean-bean-machine/005.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 6,
+      "title": "본문 5",
+      "kind": "manual",
+      "image": "assets/manuals/mean-bean-machine/006.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 7,
+      "title": "본문 6",
+      "kind": "manual",
+      "image": "assets/manuals/mean-bean-machine/007.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 8,
+      "title": "본문 7",
+      "kind": "manual",
+      "image": "assets/manuals/mean-bean-machine/008.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 9,
+      "title": "본문 8",
+      "kind": "manual",
+      "image": "assets/manuals/mean-bean-machine/009.jpg",
+      "width": 3540,
+      "height": 3072
+    },
+    {
+      "number": 10,
+      "title": "본문 9",
+      "kind": "manual",
+      "image": "assets/manuals/mean-bean-machine/010.jpg",
+      "width": 3536,
+      "height": 3072
+    },
+    {
+      "number": 11,
+      "title": "본문 10",
+      "kind": "manual",
+      "image": "assets/manuals/mean-bean-machine/011.jpg",
+      "width": 1776,
+      "height": 3072
+    },
+    {
+      "number": 12,
+      "title": "번역자 해설",
+      "kind": "appendix",
+      "image": "assets/manuals/mean-bean-machine/012.jpg",
+      "width": 3536,
+      "height": 3072
+    }
+  ]
+}

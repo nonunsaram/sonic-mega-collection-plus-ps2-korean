@@ -1,0 +1,109 @@
+{
+  "id": "sonic-spinball",
+  "title": "소닉 스핀볼",
+  "platform": "메가 드라이브",
+  "sourceEdition": "일본어판",
+  "pageCount": 12,
+  "manualPageCount": 11,
+  "appendixCount": 1,
+  "cover": "assets/manuals/sonic-spinball/cover.jpg",
+  "manifest": "data/manuals/sonic-spinball.json",
+  "pages": [
+    {
+      "number": 1,
+      "title": "표지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-spinball/001.jpg",
+      "width": 1748,
+      "height": 3072
+    },
+    {
+      "number": 2,
+      "title": "본문 1",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-spinball/002.jpg",
+      "width": 3496,
+      "height": 3072
+    },
+    {
+      "number": 3,
+      "title": "본문 2",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-spinball/003.jpg",
+      "width": 3496,
+      "height": 3072
+    },
+    {
+      "number": 4,
+      "title": "본문 3",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-spinball/004.jpg",
+      "width": 3496,
+      "height": 3072
+    },
+    {
+      "number": 5,
+      "title": "본문 4",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-spinball/005.jpg",
+      "width": 3496,
+      "height": 3072
+    },
+    {
+      "number": 6,
+      "title": "본문 5",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-spinball/006.jpg",
+      "width": 3496,
+      "height": 3072
+    },
+    {
+      "number": 7,
+      "title": "본문 6",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-spinball/007.jpg",
+      "width": 3496,
+      "height": 3072
+    },
+    {
+      "number": 8,
+      "title": "본문 7",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-spinball/008.jpg",
+      "width": 3496,
+      "height": 3072
+    },
+    {
+      "number": 9,
+      "title": "본문 8",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-spinball/009.jpg",
+      "width": 3496,
+      "height": 3072
+    },
+    {
+      "number": 10,
+      "title": "본문 9",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-spinball/010.jpg",
+      "width": 3496,
+      "height": 3072
+    },
+    {
+      "number": 11,
+      "title": "본문 10",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-spinball/011.jpg",
+      "width": 1748,
+      "height": 3072
+    },
+    {
+      "number": 12,
+      "title": "번역자 해설",
+      "kind": "appendix",
+      "image": "assets/manuals/sonic-spinball/012.jpg",
+      "width": 3536,
+      "height": 3072
+    }
+  ]
+}
