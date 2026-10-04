@@ -1,5 +1,70 @@
 <!doctype html>
 <html lang="ko">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>한국어 매뉴얼 뷰어</title><link rel="stylesheet" href="assets/css/styles.css"><script type="module" src="assets/js/reader.js"></script></head>
-<body class="reader-body"><a class="skip" href="#main">본문으로 이동</a><header class="site-header"><a href="index.html" class="brand">← 매뉴얼 목록</a><a href="https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean">GitHub</a></header>
-<main id="main"><div class="reader-heading"><h1 id="title">매뉴얼</h1><p id="edition" class="muted"></p></div><nav class="toolbar" aria-label="매뉴얼 페이지 탐색"><button id="prev" disabled aria-label="이전 페이지">← 이전</button><label>페이지 <select id="page" disabled></select></label><button id="next" disabled aria-label="다음 페이지">다음 →</button><label>크기 <select id="zoom" disabled><option value="fit">화면 맞춤</option><option value="100">100%</option><option value="150">150%</option></select></label><a id="original" hidden target="_blank" rel="noopener">이미지 원본 보기 ↗</a></nav><p id="status" class="reader-status" role="status">매뉴얼을 불러오는 중입니다.</p><div id="viewport" class="viewport"><img id="image" hidden alt=""></div><p class="reader-help">좌우 방향키로 페이지를 넘길 수 있습니다. 현재 주소를 복사하면 이 페이지를 공유할 수 있습니다.</p></main></body></html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>한국어 매뉴얼 뷰어</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="module" src="assets/js/reader.js"></script>
+</head>
+<body class="reader-body">
+<a class="skip" href="#viewport">본문으로 이동</a>
+<header class="site-header">
+  <a href="index.html" class="brand" aria-label="매뉴얼 목록으로">
+    <span class="brand-mark" aria-hidden="true">←</span>
+    <span class="brand-text">매뉴얼 목록<small>SONIC MEGA COLLECTION PLUS</small></span>
+  </a>
+  <div class="reader-title"><h1 id="title">매뉴얼</h1><p id="edition"></p></div>
+  <nav class="site-nav" aria-label="사이트">
+    <a href="https://nonunsaram.github.io/" class="hide-narrow">한국어화 아카이브</a>
+  </nav>
+</header>
+<main class="reader-main" id="main">
+  <aside id="thumbs" class="thumbs" aria-label="페이지 목록"><ol id="thumb-list"></ol></aside>
+  <div class="stage">
+    <p id="status" class="reader-status" role="status" aria-live="polite">매뉴얼을 불러오는 중입니다.</p>
+    <button id="prev" class="flip prev" type="button" disabled aria-label="이전 페이지">‹</button>
+    <div id="viewport" class="viewport loading" tabindex="-1" data-fit="page">
+      <img id="image" alt="" draggable="false">
+    </div>
+    <button id="next" class="flip next" type="button" disabled aria-label="다음 페이지">›</button>
+    <div id="help" class="help" hidden>
+      <h2>사용 방법</h2>
+      <dl>
+        <dt><kbd>←</kbd> <kbd>→</kbd></dt><dd>이전 / 다음 페이지</dd>
+        <dt><kbd>Home</kbd> <kbd>End</kbd></dt><dd>처음 / 마지막 페이지</dd>
+        <dt><kbd>+</kbd> <kbd>-</kbd></dt><dd>확대 / 축소</dd>
+        <dt><kbd>0</kbd></dt><dd>화면 맞춤으로 되돌리기</dd>
+        <dt><kbd>W</kbd></dt><dd>폭 맞춤 전환</dd>
+        <dt><kbd>T</kbd></dt><dd>페이지 목록 보이기 / 숨기기</dd>
+        <dt><kbd>F</kbd></dt><dd>전체 화면</dd>
+        <dt>터치</dt><dd>좌우로 밀어 넘기기, 두 번 탭해 확대</dd>
+      </dl>
+    </div>
+    <nav class="toolbar" aria-label="매뉴얼 페이지 탐색">
+      <div class="group">
+        <button id="toggle-thumbs" class="tool" type="button" aria-controls="thumbs" aria-pressed="true" title="페이지 목록 (T)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg><span class="hide-narrow">목록</span>
+        </button>
+      </div>
+      <label class="counter"><span class="sr-only">페이지 번호</span><input id="page-input" type="text" inputmode="numeric" autocomplete="off" disabled> / <span id="page-total">-</span></label>
+      <input id="scrub" class="scrub" type="range" min="1" max="1" value="1" disabled aria-label="페이지 이동">
+      <label class="hide-narrow"><span class="sr-only">페이지 선택</span><select id="page" disabled></select></label>
+      <div class="group">
+        <button id="zoom-out" class="tool" type="button" disabled title="축소 (-)" aria-label="축소"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M8 11h6M21 21l-5-5"/></svg></button>
+        <button id="zoom-reset" class="tool" type="button" disabled title="화면 맞춤 (0)"><span id="zoom-label">맞춤</span></button>
+        <button id="zoom-in" class="tool" type="button" disabled title="확대 (+)" aria-label="확대"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M8 11h6M11 8v6M21 21l-5-5"/></svg></button>
+        <button id="fit-width" class="tool hide-narrow" type="button" disabled aria-pressed="false" title="폭 맞춤 (W)">폭 맞춤</button>
+      </div>
+      <div class="group">
+        <a id="original" class="tool hide-narrow" hidden target="_blank" rel="noopener" title="고해상도 원본 이미지">원본 ↗</a>
+        <button id="fullscreen" class="tool" type="button" title="전체 화면 (F)" aria-label="전체 화면"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        <button id="toggle-help" class="tool" type="button" aria-controls="help" aria-expanded="false" title="사용 방법" aria-label="사용 방법">?</button>
+      </div>
+    </nav>
+  </div>
+</main>
+</body>
+</html>
