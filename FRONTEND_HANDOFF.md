@@ -47,7 +47,7 @@ release/
 
 페이지 목록(썸네일), 좌우 넘김 버튼, 페이지 번호 입력·슬라이더·목록 선택, 화면 맞춤/폭 맞춤, 확대(최대 400%)와 끌어서 이동, 더블클릭 확대, 전체 화면, 모바일 스와이프, 앞뒤 페이지 미리 불러오기를 지원합니다. 키보드: `←` `→` `Home` `End` `+` `-` `0` `W` `T` `F` `?`.
 
-디자인 토큰과 Pretendard 글꼴(jsDelivr, SIL OFL)은 노는사람 한국어화 아카이브(`nonunsaram.github.io`)와 같습니다.
+디자인 토큰과 Noto Sans KR 글꼴(Google Fonts, SIL OFL)은 노는사람 한국어화 아카이브(`nonunsaram.github.io`)와 같습니다.
 
 ## 로컬 실행 및 확인
 
