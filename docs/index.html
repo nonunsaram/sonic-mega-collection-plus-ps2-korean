@@ -1,12 +1,59 @@
 <!doctype html>
 <html lang="ko">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>소닉 메가 컬렉션 플러스 · 한국어 프로젝트</title><link rel="stylesheet" href="assets/css/styles.css"><script type="module" src="assets/js/catalog.js"></script></head>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>소닉 메가 컬렉션 플러스 한국어 패치 · 매뉴얼</title>
+<meta name="description" content="PS2 소닉 메가 컬렉션 플러스 비공식 한국어 패치와 한국어 매뉴얼 7종을 웹에서 읽을 수 있습니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400..900&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="module" src="assets/js/catalog.js"></script>
+</head>
 <body>
 <a class="skip" href="#main">본문으로 이동</a>
-<header class="site-header"><a href="index.html" class="brand">SONIC MEGA COLLECTION PLUS</a><a href="https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean">GitHub</a></header>
-<main id="main" class="container">
-<section class="hero"><p class="eyebrow">PLAYSTATION 2 · 한국어 패치 v1.0.0</p><h1>소닉의 모험을<br>한국어로 읽어보세요.</h1><p>메뉴와 UI를 한국어로, 게임 매뉴얼은 웹에서도 편하게.</p><a class="button" href="https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/tag/v1.0.0">한국어 패치 다운로드</a><p class="muted">일본판 PS2 원본 ISO에 적용하는 xdelta 패치입니다. 수록 게임 ROM은 변경하지 않았습니다.</p></section>
-<section aria-labelledby="manual-heading"><div class="section-heading"><div><p class="eyebrow">MANUAL LIBRARY</p><h2 id="manual-heading">한국어 매뉴얼 7종</h2></div><label>매뉴얼 검색<input id="search" type="search" placeholder="게임 이름" autocomplete="off"></label></div><p>패치에 포함된 7종의 매뉴얼을 고해상도로 제공합니다. 웹판은 부록을 포함해 총 139페이지입니다.</p><p id="status" role="status">매뉴얼을 불러오는 중입니다.</p><div id="catalog" class="catalog"></div></section>
-<section class="release-info"><h2>패치 적용 안내</h2><p>원본 파일의 SHA-256을 확인한 뒤 xdelta로 적용해 주세요. 자세한 사용법과 적용 범위는 <a href="https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean#readme">저장소 안내</a>에 있습니다.</p><details><summary>원본 및 패치 검증 정보</summary><div id="checksums"></div></details></section>
-</main><footer>비공식 팬 번역 프로젝트 · Sonic 및 관련 게임과 원본 매뉴얼의 권리는 SEGA 및 각 권리자에게 있습니다.</footer>
-</body></html>
+<header class="site-header">
+  <a href="https://nonunsaram.github.io/" class="brand">
+    <span class="brand-mark" aria-hidden="true">노</span>
+    <span class="brand-text">노는사람 한국어화 아카이브<small>SONIC KOREAN ARCHIVE</small></span>
+  </a>
+  <nav class="site-nav" aria-label="사이트">
+    <a href="#manuals">매뉴얼</a>
+    <a href="#patch">패치 안내</a>
+    <a href="https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean" class="hide-narrow">GitHub</a>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">PlayStation 2 · 한국어 패치 v1.0.0</p>
+      <h1>소닉 메가 컬렉션 플러스<br>한국어 패치</h1>
+      <p>메뉴와 UI를 한국어로 옮기고, 수록 매뉴얼 7종을 한국어로 번역했습니다. 매뉴얼은 이 사이트에서 고해상도로 바로 읽을 수 있습니다.</p>
+      <div class="hero-actions">
+        <a class="button" href="https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/tag/v1.0.0">한국어 패치 다운로드</a>
+        <a class="button ghost" href="#manuals">매뉴얼 읽기</a>
+      </div>
+      <p class="muted">일본판 PS2 원본 ISO에 적용하는 xdelta 패치입니다. 수록 게임 ROM은 변경하지 않았습니다.</p>
+    </div>
+  </section>
+  <div class="container">
+    <section id="manuals" class="section" aria-labelledby="manual-heading">
+      <div class="section-heading">
+        <div><p class="eyebrow">Manual Library</p><h2 id="manual-heading">한국어 매뉴얼 7종</h2></div>
+        <label class="search"><span class="sr-only">매뉴얼 검색</span><input id="search" type="search" placeholder="게임 이름으로 찾기" autocomplete="off"></label>
+      </div>
+      <p class="muted">패치에 포함된 7종의 매뉴얼입니다. 웹판은 부록을 포함해 총 139페이지입니다. 전체 17종 중 나머지 10종은 이번 한국어화 범위에 포함되지 않습니다.</p>
+      <p id="status" class="muted" role="status">매뉴얼을 불러오는 중입니다.</p>
+      <div id="catalog" class="catalog"></div>
+    </section>
+    <section id="patch" class="notice" aria-labelledby="patch-heading">
+      <h2 id="patch-heading">패치 적용 안내</h2>
+      <p>원본 파일의 SHA-256을 확인한 뒤 xdelta로 적용해 주세요. 자세한 사용법과 적용 범위는 <a href="https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean#readme">저장소 안내</a>에 있습니다.</p>
+      <details><summary>원본 및 패치 검증 정보</summary><div id="checksums"></div></details>
+    </section>
+  </div>
+</main>
+<footer>비공식 팬 번역 프로젝트 · Sonic 및 관련 게임과 원본 매뉴얼의 권리는 SEGA 및 각 권리자에게 있습니다. · <a href="https://nonunsaram.github.io/">노는사람 한국어화 아카이브</a></footer>
+</body>
+</html>
