@@ -11,6 +11,13 @@
   "manifest": "data/manuals/sonic-cd.json",
   "downloads": [
     {
+      "id": "korean",
+      "label": "한국어",
+      "pages": 19,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-cd-ko.zip",
+      "bytes": 154940187
+    },
+    {
       "id": "original",
       "label": "원본",
       "pages": 18,
@@ -190,7 +197,7 @@
     },
     {
       "number": 19,
-      "title": "번역자 부록·CD 원문과 현재 공식 소개",
+      "title": "번역자 해설·CD 원문과 현재 공식 소개",
       "kind": "appendix",
       "image": "assets/manuals/sonic-cd/019.jpg",
       "thumb": "assets/manuals/sonic-cd/thumbs/019.jpg",

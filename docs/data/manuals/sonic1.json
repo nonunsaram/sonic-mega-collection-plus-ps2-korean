@@ -10,6 +10,13 @@
   "manifest": "data/manuals/sonic1.json",
   "downloads": [
     {
+      "id": "korean",
+      "label": "한국어",
+      "pages": 24,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic1-ko.zip",
+      "bytes": 88519107
+    },
+    {
       "id": "original",
       "label": "원본",
       "pages": 24,

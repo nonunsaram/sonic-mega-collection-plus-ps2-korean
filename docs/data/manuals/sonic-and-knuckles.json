@@ -10,6 +10,13 @@
   "manifest": "data/manuals/sonic-and-knuckles.json",
   "downloads": [
     {
+      "id": "korean",
+      "label": "한국어",
+      "pages": 27,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-and-knuckles-ko.zip",
+      "bytes": 87447544
+    },
+    {
       "id": "original",
       "label": "원본",
       "pages": 26,
@@ -261,7 +268,7 @@
     },
     {
       "number": 27,
-      "title": "번역자 부록 - 현재 설정과 당시 매뉴얼의 표현",
+      "title": "번역자 해설·현재 설정과 당시 매뉴얼의 표현",
       "kind": "appendix",
       "image": "assets/manuals/sonic-and-knuckles/027.jpg",
       "thumb": "assets/manuals/sonic-and-knuckles/thumbs/027.jpg",

@@ -11,6 +11,13 @@
   "manifest": "data/manuals/sonic-the-fighters.json",
   "downloads": [
     {
+      "id": "korean",
+      "label": "한국어",
+      "pages": 10,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-the-fighters-ko.zip",
+      "bytes": 108773512
+    },
+    {
       "id": "original",
       "label": "원본",
       "pages": 10,

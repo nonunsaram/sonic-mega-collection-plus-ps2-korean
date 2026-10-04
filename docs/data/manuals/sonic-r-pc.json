@@ -11,6 +11,13 @@
   "manifest": "data/manuals/sonic-r-pc.json",
   "downloads": [
     {
+      "id": "korean",
+      "label": "한국어",
+      "pages": 15,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-r-pc-ko.zip",
+      "bytes": 93422591
+    },
+    {
       "id": "original",
       "label": "원본",
       "pages": 15,

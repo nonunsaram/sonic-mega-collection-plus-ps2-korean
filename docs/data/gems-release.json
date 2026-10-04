@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "releaseUrl": "https://github.com/nonunsaram/sonic-gems-collection-gc-korean/releases/tag/v1.0.0",
+  "source": {
+    "filename": "Sonic Gems Collection (Japan).iso",
+    "bytes": 1459978240,
+    "sha256": "c3c0f44d746c6b483ac0df4ebc9e25978602e92e17fbee039e8d6130d4e061b4"
+  },
+  "target": {
+    "filename": "SONIC_GEMS_COLLECTION_GC_KOREAN_1.0.0.iso",
+    "bytes": 1459978240,
+    "sha256": "ab7e4a1a45de822c41e71febc89e70b0913f82fe96a74ed937a174bd2b8e2e9b"
+  },
+  "patch": {
+    "filename": "sonic-gems-collection-gc-korean-v1.0.0.xdelta",
+    "sha256": "2dc5eb061b253d7913e0c42225f9a3678c8a7cbb1731e2db6f34ee29f673345c"
+  }
+}

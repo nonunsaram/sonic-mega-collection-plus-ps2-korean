@@ -10,6 +10,13 @@
   "manifest": "data/manuals/sonic3.json",
   "downloads": [
     {
+      "id": "korean",
+      "label": "한국어",
+      "pages": 25,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic3-ko.zip",
+      "bytes": 95853511
+    },
+    {
       "id": "original",
       "label": "원본",
       "pages": 24,
@@ -243,7 +250,7 @@
     },
     {
       "number": 25,
-      "title": "부록 - 현재 설정과 원본 매뉴얼의 오류",
+      "title": "번역자 해설·현재 설정과 원본 매뉴얼의 오류",
       "kind": "appendix",
       "image": "assets/manuals/sonic3/025.jpg",
       "thumb": "assets/manuals/sonic3/thumbs/025.jpg",

@@ -2,13 +2,20 @@
   "id": "sonic-3d-blast",
   "title": "소닉 3D 블래스트",
   "platform": "메가 드라이브",
-  "sourceEdition": "해외 메가 드라이브 영문판",
+  "sourceEdition": "영어판",
   "pageCount": 11,
   "manualPageCount": 10,
   "appendixCount": 1,
   "cover": "assets/manuals/sonic-3d-blast/cover.jpg",
   "manifest": "data/manuals/sonic-3d-blast.json",
   "downloads": [
+    {
+      "id": "korean",
+      "label": "한국어",
+      "pages": 11,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-3d-blast-ko.zip",
+      "bytes": 22406703
+    },
     {
       "id": "original",
       "label": "원본",
@@ -36,7 +43,7 @@
     },
     {
       "number": 2,
-      "title": "본문 1",
+      "title": "시작하기",
       "kind": "manual",
       "image": "assets/manuals/sonic-3d-blast/002.jpg",
       "thumb": "assets/manuals/sonic-3d-blast/thumbs/002.jpg",
@@ -45,7 +52,7 @@
     },
     {
       "number": 3,
-      "title": "본문 2",
+      "title": "스토리",
       "kind": "manual",
       "image": "assets/manuals/sonic-3d-blast/003.jpg",
       "thumb": "assets/manuals/sonic-3d-blast/thumbs/003.jpg",
@@ -54,7 +61,7 @@
     },
     {
       "number": 4,
-      "title": "본문 3",
+      "title": "조작 방법·시작 화면과 옵션",
       "kind": "manual",
       "image": "assets/manuals/sonic-3d-blast/004.jpg",
       "thumb": "assets/manuals/sonic-3d-blast/thumbs/004.jpg",
@@ -63,7 +70,7 @@
     },
     {
       "number": 5,
-      "title": "본문 4",
+      "title": "화면 표시·아이템",
       "kind": "manual",
       "image": "assets/manuals/sonic-3d-blast/005.jpg",
       "thumb": "assets/manuals/sonic-3d-blast/thumbs/005.jpg",
@@ -72,7 +79,7 @@
     },
     {
       "number": 6,
-      "title": "본문 5",
+      "title": "아이템·플리키 아일랜드",
       "kind": "manual",
       "image": "assets/manuals/sonic-3d-blast/006.jpg",
       "thumb": "assets/manuals/sonic-3d-blast/thumbs/006.jpg",
@@ -81,7 +88,7 @@
     },
     {
       "number": 7,
-      "title": "본문 6",
+      "title": "존 소개·게임 오버",
       "kind": "manual",
       "image": "assets/manuals/sonic-3d-blast/007.jpg",
       "thumb": "assets/manuals/sonic-3d-blast/thumbs/007.jpg",
@@ -90,7 +97,7 @@
     },
     {
       "number": 8,
-      "title": "본문 7",
+      "title": "공략·제작진",
       "kind": "manual",
       "image": "assets/manuals/sonic-3d-blast/008.jpg",
       "thumb": "assets/manuals/sonic-3d-blast/thumbs/008.jpg",
@@ -99,7 +106,7 @@
     },
     {
       "number": 9,
-      "title": "본문 8",
+      "title": "제작진·메모",
       "kind": "manual",
       "image": "assets/manuals/sonic-3d-blast/009.jpg",
       "thumb": "assets/manuals/sonic-3d-blast/thumbs/009.jpg",
@@ -108,7 +115,7 @@
     },
     {
       "number": 10,
-      "title": "본문 9",
+      "title": "메모",
       "kind": "manual",
       "image": "assets/manuals/sonic-3d-blast/010.jpg",
       "thumb": "assets/manuals/sonic-3d-blast/thumbs/010.jpg",
