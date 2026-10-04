@@ -1,0 +1,120 @@
+{
+  "id": "sonic-the-fighters",
+  "title": "소닉 더 파이터즈",
+  "platform": "아케이드",
+  "sourceEdition": "일본어판",
+  "collection": "gems",
+  "pageCount": 10,
+  "manualPageCount": 10,
+  "appendixCount": 0,
+  "cover": "assets/manuals/sonic-the-fighters/cover.jpg",
+  "manifest": "data/manuals/sonic-the-fighters.json",
+  "downloads": [
+    {
+      "id": "original",
+      "label": "원본",
+      "pages": 10,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-the-fighters-original.zip",
+      "bytes": 8993548
+    },
+    {
+      "id": "clean",
+      "label": "클린본",
+      "pages": 10,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-the-fighters-clean.zip",
+      "bytes": 72443800
+    }
+  ],
+  "pages": [
+    {
+      "number": 1,
+      "title": "전단지 앞면",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-the-fighters/001.jpg",
+      "thumb": "assets/manuals/sonic-the-fighters/thumbs/001.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "number": 2,
+      "title": "전단지 뒷면·캐릭터 소개",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-the-fighters/002.jpg",
+      "thumb": "assets/manuals/sonic-the-fighters/thumbs/002.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "number": 3,
+      "title": "소닉 커맨드 표",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-the-fighters/003.jpg",
+      "thumb": "assets/manuals/sonic-the-fighters/thumbs/003.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 4,
+      "title": "테일즈 커맨드 표",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-the-fighters/004.jpg",
+      "thumb": "assets/manuals/sonic-the-fighters/thumbs/004.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 5,
+      "title": "에이미 커맨드 표",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-the-fighters/005.jpg",
+      "thumb": "assets/manuals/sonic-the-fighters/thumbs/005.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 6,
+      "title": "너클즈 커맨드 표",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-the-fighters/006.jpg",
+      "thumb": "assets/manuals/sonic-the-fighters/thumbs/006.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 7,
+      "title": "팽 커맨드 표",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-the-fighters/007.jpg",
+      "thumb": "assets/manuals/sonic-the-fighters/thumbs/007.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 8,
+      "title": "빈 커맨드 표",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-the-fighters/008.jpg",
+      "thumb": "assets/manuals/sonic-the-fighters/thumbs/008.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 9,
+      "title": "에스피오 커맨드 표",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-the-fighters/009.jpg",
+      "thumb": "assets/manuals/sonic-the-fighters/thumbs/009.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 10,
+      "title": "바크 커맨드 표",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-the-fighters/010.jpg",
+      "thumb": "assets/manuals/sonic-the-fighters/thumbs/010.jpg",
+      "width": 2560,
+      "height": 1920
+    }
+  ]
+}

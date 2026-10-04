@@ -8,6 +8,22 @@
   "appendixCount": 1,
   "cover": "assets/manuals/sonic-and-knuckles/cover.jpg",
   "manifest": "data/manuals/sonic-and-knuckles.json",
+  "downloads": [
+    {
+      "id": "original",
+      "label": "원본",
+      "pages": 26,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-and-knuckles-original.zip",
+      "bytes": 85534918
+    },
+    {
+      "id": "clean",
+      "label": "클린본",
+      "pages": 26,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-and-knuckles-clean.zip",
+      "bytes": 74157142
+    }
+  ],
   "pages": [
     {
       "number": 1,

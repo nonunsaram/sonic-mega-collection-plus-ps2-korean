@@ -8,6 +8,22 @@
   "appendixCount": 1,
   "cover": "assets/manuals/mean-bean-machine/cover.jpg",
   "manifest": "data/manuals/mean-bean-machine.json",
+  "downloads": [
+    {
+      "id": "original",
+      "label": "원본",
+      "pages": 11,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/mean-bean-machine-original.zip",
+      "bytes": 3865093
+    },
+    {
+      "id": "clean",
+      "label": "클린본",
+      "pages": 11,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/mean-bean-machine-clean.zip",
+      "bytes": 30638765
+    }
+  ],
   "pages": [
     {
       "number": 1,

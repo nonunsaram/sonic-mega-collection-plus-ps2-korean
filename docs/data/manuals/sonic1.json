@@ -8,6 +8,22 @@
   "appendixCount": 0,
   "cover": "assets/manuals/sonic1/cover.jpg",
   "manifest": "data/manuals/sonic1.json",
+  "downloads": [
+    {
+      "id": "original",
+      "label": "원본",
+      "pages": 24,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic1-original.zip",
+      "bytes": 83400924
+    },
+    {
+      "id": "clean",
+      "label": "클린본",
+      "pages": 24,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic1-clean.zip",
+      "bytes": 83243370
+    }
+  ],
   "pages": [
     {
       "number": 1,

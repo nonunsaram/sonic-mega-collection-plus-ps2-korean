@@ -79,6 +79,66 @@
       "appendixCount": 1,
       "cover": "assets/manuals/mean-bean-machine/cover.jpg",
       "manifest": "data/manuals/mean-bean-machine.json"
+    },
+    {
+      "id": "sonic-cd",
+      "title": "소닉 CD",
+      "platform": "메가 CD",
+      "sourceEdition": "일본어판",
+      "collection": "gems",
+      "pageCount": 19,
+      "manualPageCount": 18,
+      "appendixCount": 1,
+      "cover": "assets/manuals/sonic-cd/cover.jpg",
+      "manifest": "data/manuals/sonic-cd.json"
+    },
+    {
+      "id": "sonic-cd-pc",
+      "title": "소닉 CD (PC판)",
+      "platform": "Windows",
+      "sourceEdition": "일본어판",
+      "collection": "gems",
+      "pageCount": 13,
+      "manualPageCount": 13,
+      "appendixCount": 0,
+      "cover": "assets/manuals/sonic-cd-pc/cover.jpg",
+      "manifest": "data/manuals/sonic-cd-pc.json"
+    },
+    {
+      "id": "sonic-r",
+      "title": "소닉 R",
+      "platform": "세가 새턴",
+      "sourceEdition": "일본어판",
+      "collection": "gems",
+      "pageCount": 17,
+      "manualPageCount": 17,
+      "appendixCount": 0,
+      "cover": "assets/manuals/sonic-r/cover.jpg",
+      "manifest": "data/manuals/sonic-r.json"
+    },
+    {
+      "id": "sonic-r-pc",
+      "title": "소닉 R (PC판)",
+      "platform": "Windows",
+      "sourceEdition": "일본어판",
+      "collection": "gems",
+      "pageCount": 15,
+      "manualPageCount": 15,
+      "appendixCount": 0,
+      "cover": "assets/manuals/sonic-r-pc/cover.jpg",
+      "manifest": "data/manuals/sonic-r-pc.json"
+    },
+    {
+      "id": "sonic-the-fighters",
+      "title": "소닉 더 파이터즈",
+      "platform": "아케이드",
+      "sourceEdition": "일본어판",
+      "collection": "gems",
+      "pageCount": 10,
+      "manualPageCount": 10,
+      "appendixCount": 0,
+      "cover": "assets/manuals/sonic-the-fighters/cover.jpg",
+      "manifest": "data/manuals/sonic-the-fighters.json"
     }
   ]
 }

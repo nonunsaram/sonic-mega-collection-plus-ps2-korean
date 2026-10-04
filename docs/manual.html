@@ -4,22 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>한국어 매뉴얼 뷰어</title>
+<meta name="theme-color" content="#3a9bff">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400..900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400..900&family=Nunito:wght@600..900&display=swap">
 <link rel="stylesheet" href="assets/css/styles.css">
 <script type="module" src="assets/js/reader.js"></script>
 </head>
 <body class="reader-body">
 <a class="skip" href="#viewport">본문으로 이동</a>
+<div class="sky" aria-hidden="true"></div>
 <header class="site-header">
   <a href="index.html" class="brand" aria-label="매뉴얼 목록으로">
-    <span class="brand-mark" aria-hidden="true">←</span>
-    <span class="brand-text">매뉴얼 목록<small>SONIC MEGA COLLECTION PLUS</small></span>
+    <img class="brand-avatar" src="assets/img/avatar.jpg" alt="" width="36" height="36">
+    <span class="brand-text"><span class="brand-title">매뉴얼 목록</span><span class="brand-en" lang="en">Sonic Korean Manuals</span></span>
   </a>
   <div class="reader-title"><h1 id="title">매뉴얼</h1><p id="edition"></p></div>
   <nav class="site-nav" aria-label="사이트">
-    <a href="https://nonunsaram.github.io/sonic-archive/" class="hide-narrow">한국어화 아카이브</a>
+    <a href="https://nonunsaram.github.io/sonic-archive/">한국어 아카이브</a>
   </nav>
 </header>
 <main class="reader-main" id="main">
@@ -31,7 +34,7 @@
       <img id="image" alt="" draggable="false">
     </div>
     <button id="next" class="flip next" type="button" disabled aria-label="다음 페이지">›</button>
-    <div id="help" class="help" hidden>
+    <div id="help" class="popover help" hidden>
       <h2>사용 방법</h2>
       <dl>
         <dt><kbd>←</kbd> <kbd>→</kbd></dt><dd>이전 / 다음 페이지</dd>
@@ -40,14 +43,20 @@
         <dt><kbd>0</kbd></dt><dd>화면 맞춤으로 되돌리기</dd>
         <dt><kbd>W</kbd></dt><dd>폭 맞춤 전환</dd>
         <dt><kbd>T</kbd></dt><dd>페이지 목록 보이기 / 숨기기</dd>
+        <dt><kbd>D</kbd></dt><dd>받기</dd>
         <dt><kbd>F</kbd></dt><dd>전체 화면</dd>
         <dt>터치</dt><dd>좌우로 밀어 넘기기, 두 번 탭해 확대</dd>
       </dl>
     </div>
+    <div id="download-menu" class="popover" hidden>
+      <a id="download-page" class="menu-item" download>이 페이지 받기<small id="download-page-note"></small></a>
+      <button id="download-all" class="menu-item" type="button">한국어 전체 받기<small id="download-all-note"></small></button>
+      <div id="download-extras"></div>
+    </div>
     <nav class="toolbar" aria-label="매뉴얼 페이지 탐색">
       <div class="group">
         <button id="toggle-thumbs" class="tool" type="button" aria-controls="thumbs" aria-pressed="true" title="페이지 목록 (T)">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg><span class="hide-narrow">목록</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><span class="hide-narrow">목록</span>
         </button>
       </div>
       <label class="counter"><span class="sr-only">페이지 번호</span><input id="page-input" type="text" inputmode="numeric" autocomplete="off" disabled> / <span id="page-total">-</span></label>
@@ -60,7 +69,9 @@
         <button id="fit-width" class="tool hide-narrow" type="button" disabled aria-pressed="false" title="폭 맞춤 (W)">폭 맞춤</button>
       </div>
       <div class="group">
-        <a id="original" class="tool hide-narrow" hidden target="_blank" rel="noopener" title="고해상도 원본 이미지">원본 ↗</a>
+        <button id="download" class="tool accent" type="button" disabled aria-controls="download-menu" aria-expanded="false" title="받기 (D)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span class="hide-narrow">받기</span>
+        </button>
         <button id="fullscreen" class="tool" type="button" title="전체 화면 (F)" aria-label="전체 화면"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
         <button id="toggle-help" class="tool" type="button" aria-controls="help" aria-expanded="false" title="사용 방법" aria-label="사용 방법">?</button>
       </div>
