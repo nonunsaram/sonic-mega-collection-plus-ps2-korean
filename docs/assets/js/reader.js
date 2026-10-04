@@ -108,8 +108,7 @@ function show(page, navigation = 'push') {
   image.src = entry.image;
   applyZoom();
   viewport.scrollTo(0, 0);
-  $('#original').href = entry.image;
-  $('#original').hidden = false;
+  updateDownloads();
   document.title = `${book.title} · ${page}페이지 · 한국어 매뉴얼`;
   preload(page + 1); preload(page - 1);
 }
@@ -162,6 +161,90 @@ function syncThumbState() {
   $('#toggle-thumbs').setAttribute('aria-pressed', String(shown));
 }
 
+/* ── 받기 ─────────────────────────────── */
+// 받는 파일 이름은 일부 환경에서 한글이 깨지므로 영문 ID로 만듭니다.
+const pad = number => String(number).padStart(3, '0');
+const fileName = index => `${pad(index + 1)}.${book.pages[index].image.split('.').pop()}`;
+const megabytes = bytes => `${Math.max(1, Math.round(bytes / 1048576))}MB`;
+
+function buildDownloads() {
+  // 작업용 원본·클린본은 무손실 PNG zip으로 GitHub 릴리스에 있습니다.
+  const extras = (book.downloads ?? []).map(item => {
+    const link = element('a', 'menu-item');
+    link.href = item.url;
+    link.append(`${item.label} 받기`, element('small', '', [`${item.pages}장`, '무손실 PNG zip', item.bytes && megabytes(item.bytes)].filter(Boolean).join(' · ')));
+    link.onclick = () => toggleDownloads(false);
+    return link;
+  });
+  if (extras.length) {
+    const note = element('p', 'menu-note', '클린본은 원본에서 글자만 지운 작업용 이미지입니다.');
+    $('#download-extras').replaceChildren(element('hr'), ...extras, note);
+  }
+  $('#download-all-note').textContent = `${book.pages.length}장 · zip`;
+}
+
+function updateDownloads() {
+  $('#download-page').href = book.pages[current - 1].image;
+  $('#download-page').download = `${book.id}-ko-${fileName(current - 1)}`;
+  $('#download-page-note').textContent = `${current}페이지`;
+}
+
+function toggleDownloads(force) {
+  const open = force ?? $('#download-menu').hidden;
+  $('#download-menu').hidden = !open;
+  $('#download').setAttribute('aria-expanded', String(open));
+  if (open) toggleHelp(false);
+}
+
+let zipLibrary;
+function loadZip() {
+  zipLibrary ??= new Promise((resolve, reject) => {
+    const script = element('script');
+    script.src = 'assets/vendor/jszip.min.js';
+    script.onload = () => resolve(window.JSZip);
+    script.onerror = () => { zipLibrary = null; reject(new Error('압축 도구를 불러오지 못했습니다.')); };
+    document.head.append(script);
+  });
+  return zipLibrary;
+}
+
+let zipping = false;
+async function downloadAll() {
+  if (zipping) return;
+  zipping = true;
+  $('#download-all').disabled = true;
+  toggleDownloads(false);
+  const name = `${book.id}-ko`;
+  try {
+    say('압축 파일을 준비하는 중입니다.', { sticky: true });
+    const JSZip = await loadZip();
+    const zip = new JSZip();
+    const folder = zip.folder(name);
+    let done = 0;
+    // 이미 압축된 이미지라 다시 압축하지 않고 그대로 담습니다.
+    await Promise.all(book.pages.map(async (entry, index) => {
+      const response = await fetch(entry.image);
+      if (!response.ok) throw new Error(`${index + 1}페이지를 받지 못했습니다.`);
+      folder.file(fileName(index), await response.blob(), { binary: true });
+      say(`페이지를 모으는 중입니다. ${++done} / ${book.pages.length}`, { sticky: true });
+    }));
+    const blob = await zip.generateAsync({ type: 'blob', compression: 'STORE' });
+    const link = element('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `${name}.zip`;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(link.href), 60000);
+    say(`${name}.zip 받기를 시작했습니다.`);
+  } catch (error) {
+    say(`${error.message} 잠시 후 다시 시도해 주세요.`, { error: true });
+  } finally {
+    zipping = false;
+    $('#download-all').disabled = false;
+  }
+}
+
 /* ── 입력 처리 ─────────────────────────── */
 function toggleFullscreen() {
   if (document.fullscreenElement) document.exitFullscreen();
@@ -172,6 +255,7 @@ function toggleHelp(force) {
   const open = force ?? $('#help').hidden;
   $('#help').hidden = !open;
   $('#toggle-help').setAttribute('aria-expanded', String(open));
+  if (open) toggleDownloads(false);
 }
 
 function bindPointer() {
@@ -219,8 +303,8 @@ function bindKeys() {
       Home: () => go(1), End: () => go(book.pages.length),
       '+': () => zoomIn(), '=': () => zoomIn(), '-': () => zoomOut(), '0': () => setZoom(1),
       w: () => { fitWidth = !fitWidth; setZoom(1); }, t: () => toggleThumbs(), f: toggleFullscreen,
-      '?': () => toggleHelp(),
-      Escape: () => { toggleHelp(false); if (narrow.matches) toggleThumbs(false); },
+      '?': () => toggleHelp(), d: () => toggleDownloads(),
+      Escape: () => { toggleHelp(false); toggleDownloads(false); if (narrow.matches) toggleThumbs(false); },
     };
     const action = actions[key] ?? actions[key.toLowerCase()];
     if (!action) return;
@@ -241,7 +325,7 @@ function bindControls() {
   }));
   $('#scrub').max = String(total);
   $('#page-total').textContent = String(total);
-  for (const id of ['#page', '#scrub', '#page-input', '#zoom-in', '#zoom-reset', '#fit-width']) $(id).disabled = false;
+  for (const id of ['#page', '#scrub', '#page-input', '#zoom-in', '#zoom-reset', '#fit-width', '#download']) $(id).disabled = false;
 
   $('#prev').onclick = () => go(current - 1);
   $('#next').onclick = () => go(current + 1);
@@ -261,6 +345,12 @@ function bindControls() {
   $('#fit-width').onclick = () => { fitWidth = !fitWidth; setZoom(1); };
   $('#toggle-thumbs').onclick = () => toggleThumbs();
   $('#toggle-help').onclick = () => toggleHelp();
+  $('#download').onclick = () => toggleDownloads();
+  $('#download-page').onclick = () => toggleDownloads(false);
+  $('#download-all').onclick = downloadAll;
+  document.addEventListener('pointerdown', event => {
+    if (!event.target.closest('#download-menu, #download')) toggleDownloads(false);
+  });
   if (!document.fullscreenEnabled) $('#fullscreen').hidden = true;
   $('#fullscreen').onclick = toggleFullscreen;
   viewport.addEventListener('click', event => {
@@ -284,6 +374,7 @@ try {
   $('#title').textContent = book.title;
   $('#edition').textContent = `${book.platform} · ${book.sourceEdition} 기준 · ${book.pageCount}페이지${book.appendixCount ? ` (부록 ${book.appendixCount} 포함)` : ''}`;
   buildThumbs();
+  buildDownloads();
   bindControls();
   show(requestedPage(), 'replace');
   viewport.focus({ preventScroll: true });

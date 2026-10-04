@@ -28,7 +28,7 @@
   "pages": [
     {
       "number": 1,
-      "title": "1페이지",
+      "title": "표지",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/001.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/001.jpg",
@@ -37,7 +37,7 @@
     },
     {
       "number": 2,
-      "title": "2페이지",
+      "title": "주의 사항·목차·실행 환경",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/002.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/002.jpg",
@@ -46,7 +46,7 @@
     },
     {
       "number": 3,
-      "title": "3페이지",
+      "title": "게임을 시작하기 전에",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/003.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/003.jpg",
@@ -55,7 +55,7 @@
     },
     {
       "number": 4,
-      "title": "4페이지",
+      "title": "스토리",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/004.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/004.jpg",
@@ -64,7 +64,7 @@
     },
     {
       "number": 5,
-      "title": "5페이지",
+      "title": "등장 캐릭터",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/005.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/005.jpg",
@@ -73,7 +73,7 @@
     },
     {
       "number": 6,
-      "title": "6페이지",
+      "title": "조작 방법",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/006.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/006.jpg",
@@ -82,7 +82,7 @@
     },
     {
       "number": 7,
-      "title": "7페이지",
+      "title": "게임 시작하기·게임 방법",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/007.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/007.jpg",
@@ -91,7 +91,7 @@
     },
     {
       "number": 8,
-      "title": "8페이지",
+      "title": "링·아이템·스페셜 스테이지",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/008.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/008.jpg",
@@ -100,7 +100,7 @@
     },
     {
       "number": 9,
-      "title": "9페이지",
+      "title": "스페셜 스테이지 아이템·타임 어택",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/009.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/009.jpg",
@@ -109,7 +109,7 @@
     },
     {
       "number": 10,
-      "title": "10페이지",
+      "title": "라운드 소개",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/010.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/010.jpg",
@@ -118,7 +118,7 @@
     },
     {
       "number": 11,
-      "title": "11페이지",
+      "title": "세 가지 수수께끼·화면 보호기 설치",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/011.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/011.jpg",
@@ -127,7 +127,7 @@
     },
     {
       "number": 12,
-      "title": "12페이지",
+      "title": "화면 보호기 사용·스태프",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/012.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/012.jpg",
@@ -136,7 +136,7 @@
     },
     {
       "number": 13,
-      "title": "13페이지",
+      "title": "뒤표지",
       "kind": "manual",
       "image": "assets/manuals/sonic-cd-pc/013.jpg",
       "thumb": "assets/manuals/sonic-cd-pc/thumbs/013.jpg",

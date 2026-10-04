@@ -28,7 +28,7 @@
   "pages": [
     {
       "number": 1,
-      "title": "1페이지",
+      "title": "표지",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/001.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/001.jpg",
@@ -37,7 +37,7 @@
     },
     {
       "number": 2,
-      "title": "2페이지",
+      "title": "주의 사항·목차·실행 환경",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/002.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/002.jpg",
@@ -46,7 +46,7 @@
     },
     {
       "number": 3,
-      "title": "3페이지",
+      "title": "게임을 시작하기 전에",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/003.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/003.jpg",
@@ -55,7 +55,7 @@
     },
     {
       "number": 4,
-      "title": "4페이지",
+      "title": "스토리",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/004.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/004.jpg",
@@ -64,7 +64,7 @@
     },
     {
       "number": 5,
-      "title": "5페이지",
+      "title": "조작 방법",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/005.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/005.jpg",
@@ -73,7 +73,7 @@
     },
     {
       "number": 6,
-      "title": "6페이지",
+      "title": "캐릭터 소개",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/006.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/006.jpg",
@@ -82,7 +82,7 @@
     },
     {
       "number": 7,
-      "title": "7페이지",
+      "title": "레이스 규칙·게임 시작하기",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/007.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/007.jpg",
@@ -91,7 +91,7 @@
     },
     {
       "number": 8,
-      "title": "8페이지",
+      "title": "그랑프리 모드",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/008.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/008.jpg",
@@ -100,7 +100,7 @@
     },
     {
       "number": 9,
-      "title": "9페이지",
+      "title": "타임 어택 모드",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/009.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/009.jpg",
@@ -109,7 +109,7 @@
     },
     {
       "number": 10,
-      "title": "10페이지",
+      "title": "대전 모드",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/010.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/010.jpg",
@@ -118,7 +118,7 @@
     },
     {
       "number": 11,
-      "title": "11페이지",
+      "title": "옵션 모드",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/011.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/011.jpg",
@@ -127,7 +127,7 @@
     },
     {
       "number": 12,
-      "title": "12페이지",
+      "title": "아이템·장치",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/012.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/012.jpg",
@@ -136,7 +136,7 @@
     },
     {
       "number": 13,
-      "title": "13페이지",
+      "title": "코스 소개",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/013.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/013.jpg",
@@ -145,7 +145,7 @@
     },
     {
       "number": 14,
-      "title": "14페이지",
+      "title": "스태프",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/014.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/014.jpg",
@@ -154,7 +154,7 @@
     },
     {
       "number": 15,
-      "title": "15페이지",
+      "title": "뒤표지",
       "kind": "manual",
       "image": "assets/manuals/sonic-r-pc/015.jpg",
       "thumb": "assets/manuals/sonic-r-pc/thumbs/015.jpg",

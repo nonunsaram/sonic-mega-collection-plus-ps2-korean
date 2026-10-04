@@ -28,7 +28,7 @@
   "pages": [
     {
       "number": 1,
-      "title": "1페이지",
+      "title": "전단지 앞면",
       "kind": "manual",
       "image": "assets/manuals/sonic-the-fighters/001.jpg",
       "thumb": "assets/manuals/sonic-the-fighters/thumbs/001.jpg",
@@ -37,7 +37,7 @@
     },
     {
       "number": 2,
-      "title": "2페이지",
+      "title": "전단지 뒷면·캐릭터 소개",
       "kind": "manual",
       "image": "assets/manuals/sonic-the-fighters/002.jpg",
       "thumb": "assets/manuals/sonic-the-fighters/thumbs/002.jpg",
@@ -46,7 +46,7 @@
     },
     {
       "number": 3,
-      "title": "3페이지",
+      "title": "소닉 커맨드 표",
       "kind": "manual",
       "image": "assets/manuals/sonic-the-fighters/003.jpg",
       "thumb": "assets/manuals/sonic-the-fighters/thumbs/003.jpg",
@@ -55,7 +55,7 @@
     },
     {
       "number": 4,
-      "title": "4페이지",
+      "title": "테일즈 커맨드 표",
       "kind": "manual",
       "image": "assets/manuals/sonic-the-fighters/004.jpg",
       "thumb": "assets/manuals/sonic-the-fighters/thumbs/004.jpg",
@@ -64,7 +64,7 @@
     },
     {
       "number": 5,
-      "title": "5페이지",
+      "title": "에이미 커맨드 표",
       "kind": "manual",
       "image": "assets/manuals/sonic-the-fighters/005.jpg",
       "thumb": "assets/manuals/sonic-the-fighters/thumbs/005.jpg",
@@ -73,7 +73,7 @@
     },
     {
       "number": 6,
-      "title": "6페이지",
+      "title": "너클즈 커맨드 표",
       "kind": "manual",
       "image": "assets/manuals/sonic-the-fighters/006.jpg",
       "thumb": "assets/manuals/sonic-the-fighters/thumbs/006.jpg",
@@ -82,7 +82,7 @@
     },
     {
       "number": 7,
-      "title": "7페이지",
+      "title": "팽 커맨드 표",
       "kind": "manual",
       "image": "assets/manuals/sonic-the-fighters/007.jpg",
       "thumb": "assets/manuals/sonic-the-fighters/thumbs/007.jpg",
@@ -91,7 +91,7 @@
     },
     {
       "number": 8,
-      "title": "8페이지",
+      "title": "빈 커맨드 표",
       "kind": "manual",
       "image": "assets/manuals/sonic-the-fighters/008.jpg",
       "thumb": "assets/manuals/sonic-the-fighters/thumbs/008.jpg",
@@ -100,7 +100,7 @@
     },
     {
       "number": 9,
-      "title": "9페이지",
+      "title": "에스피오 커맨드 표",
       "kind": "manual",
       "image": "assets/manuals/sonic-the-fighters/009.jpg",
       "thumb": "assets/manuals/sonic-the-fighters/thumbs/009.jpg",
@@ -109,7 +109,7 @@
     },
     {
       "number": 10,
-      "title": "10페이지",
+      "title": "바크 커맨드 표",
       "kind": "manual",
       "image": "assets/manuals/sonic-the-fighters/010.jpg",
       "thumb": "assets/manuals/sonic-the-fighters/thumbs/010.jpg",
