@@ -8,6 +8,7 @@
   "appendixCount": 1,
   "cover": "assets/manuals/sonic3/cover.jpg",
   "manifest": "data/manuals/sonic3.json",
+  "koreanBytes": 23033018,
   "downloads": [
     {
       "id": "original",
@@ -243,7 +244,7 @@
     },
     {
       "number": 25,
-      "title": "부록 - 현재 설정과 원본 매뉴얼의 오류",
+      "title": "번역자 해설·현재 설정과 원본 매뉴얼의 오류",
       "kind": "appendix",
       "image": "assets/manuals/sonic3/025.jpg",
       "thumb": "assets/manuals/sonic3/thumbs/025.jpg",

@@ -8,6 +8,7 @@
   "appendixCount": 0,
   "cover": "assets/manuals/sonic1/cover.jpg",
   "manifest": "data/manuals/sonic1.json",
+  "koreanBytes": 20547790,
   "downloads": [
     {
       "id": "original",

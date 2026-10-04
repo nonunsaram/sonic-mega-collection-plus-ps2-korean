@@ -9,6 +9,7 @@
   "appendixCount": 1,
   "cover": "assets/manuals/sonic-cd/cover.jpg",
   "manifest": "data/manuals/sonic-cd.json",
+  "koreanBytes": 10753546,
   "downloads": [
     {
       "id": "original",
@@ -190,7 +191,7 @@
     },
     {
       "number": 19,
-      "title": "번역자 부록·CD 원문과 현재 공식 소개",
+      "title": "번역자 해설·CD 원문과 현재 공식 소개",
       "kind": "appendix",
       "image": "assets/manuals/sonic-cd/019.jpg",
       "thumb": "assets/manuals/sonic-cd/thumbs/019.jpg",

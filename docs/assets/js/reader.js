@@ -1,12 +1,16 @@
 import { readJSON, element } from './data.js';
+import { downloadKoreanZip, pageFileName, megabytes } from './zip.js';
 
 const $ = selector => document.querySelector(selector);
 const body = document.body;
 const image = $('#image'), viewport = $('#viewport'), status = $('#status');
 const narrow = matchMedia('(max-width: 860px)');
+const phone = matchMedia('(max-width: 560px)');
 const ZOOM_STEPS = [1, 1.5, 2, 3, 4];
 
 let book, current = 1, zoom = 1, fitWidth = false, statusTimer;
+// 한 쪽씩 보기: 좌우로 펼친 면을 왼쪽·오른쪽으로 나눠 크게 봅니다. 휴대폰에서는 기본으로 켭니다.
+let split, half = 0;
 
 const store = {
   get(key) { try { return localStorage.getItem(key); } catch { return null; } },
@@ -30,13 +34,18 @@ function pageLabel(entry, index) {
   return `${index + 1}. ${entry.title}${entry.kind === 'appendix' ? ' (부록)' : ''}`;
 }
 
+// 가로로 긴 이미지는 모두 두 쪽을 펼친 면입니다 (세로 이미지는 표지 같은 한 쪽).
+const isSpread = entry => entry.width / entry.height > 1.05;
+const splitting = () => split && isSpread(book.pages[current - 1]);
+
 /* ── 확대 ─────────────────────────────── */
 function baseSize() {
   const entry = book.pages[current - 1];
   const style = getComputedStyle(viewport);
   const w = viewport.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
   const h = viewport.clientHeight - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom);
-  const scale = fitWidth ? w / entry.width : Math.min(w / entry.width, h / entry.height);
+  const scale = splitting() ? Math.min(w / (entry.width / 2), h / entry.height)
+    : fitWidth ? w / entry.width : Math.min(w / entry.width, h / entry.height);
   return { width: entry.width * scale, height: entry.height * scale };
 }
 
@@ -45,14 +54,20 @@ function applyZoom(focus) {
   const before = { x: viewport.scrollLeft, y: viewport.scrollTop, w: image.offsetWidth, h: image.offsetHeight };
   viewport.dataset.fit = fitWidth ? 'width' : 'page';
   viewport.classList.toggle('zoomed', zoomed);
+  viewport.classList.toggle('split', splitting());
   const base = baseSize();
   image.style.width = `${Math.max(1, Math.round(base.width * zoom))}px`;
   image.style.height = `${Math.max(1, Math.round(base.height * zoom))}px`;
-  $('#zoom-label').textContent = zoomed ? `${Math.round(zoom * 100)}%` : (fitWidth ? '폭' : '맞춤');
+  $('#zoom-label').textContent = zoomed ? `${Math.round(zoom * 100)}%` : (fitWidth && !splitting() ? '폭' : '맞춤');
   $('#zoom-out').disabled = !zoomed;
   $('#zoom-in').disabled = zoom >= ZOOM_STEPS.at(-1);
   $('#fit-width').setAttribute('aria-pressed', String(fitWidth));
-  if (!zoomed) return;
+  $('#split').setAttribute('aria-pressed', String(split));
+  updateFlip();
+  if (!zoomed) {
+    if (splitting()) viewport.scrollLeft = half ? viewport.scrollWidth : 0;
+    return;
+  }
   // 확대 기준점(포인터 위치 또는 화면 중앙)이 그대로 보이도록 스크롤을 맞춥니다.
   const rect = viewport.getBoundingClientRect();
   const fx = focus ? focus.x - rect.left : viewport.clientWidth / 2;
@@ -78,9 +93,12 @@ function preload(page) {
   new Image().src = entry.image;
 }
 
-function show(page, navigation = 'push') {
+function show(page, navigation = 'push', side = 'start') {
   current = page;
   const entry = book.pages[page - 1];
+  half = side === 'end' && splitting() ? 1 : 0;
+  store.set(`manual.last.${book.id}`, String(page));
+  if (page > 1) hideResume();
   const url = new URL(location.href);
   url.searchParams.set('book', book.id);
   url.searchParams.set('page', String(page));
@@ -91,18 +109,15 @@ function show(page, navigation = 'push') {
   $('#page').value = String(page);
   $('#scrub').value = String(page);
   $('#page-input').value = String(page);
-  $('#prev').disabled = page === 1;
-  $('#next').disabled = page === total;
   for (const button of document.querySelectorAll('.thumb')) {
     const active = Number(button.dataset.page) === page;
     if (active) button.setAttribute('aria-current', 'page'); else button.removeAttribute('aria-current');
     if (active && !(narrow.matches && !body.classList.contains('thumbs-open'))) button.scrollIntoView({ block: 'nearest' });
   }
 
-  const label = `${page} / ${total} · ${entry.title}${entry.kind === 'appendix' ? ' (부록)' : ''}`;
   viewport.classList.add('loading');
   zoom = 1;
-  image.onload = () => { viewport.classList.remove('loading'); applyZoom(); say(label); };
+  image.onload = () => { viewport.classList.remove('loading'); applyZoom(); announce(); };
   image.onerror = () => { viewport.classList.remove('loading'); say('이미지를 불러오지 못했습니다. 새로고침하거나 원본 이미지를 열어 주세요.', { error: true }); };
   image.alt = `${book.title} — ${entry.title}`;
   image.src = entry.image;
@@ -114,6 +129,53 @@ function show(page, navigation = 'push') {
 }
 
 const go = page => { if (page >= 1 && page <= book.pages.length && page !== current) show(page); };
+
+function announce() {
+  const entry = book.pages[current - 1];
+  const side = splitting() ? (half ? ' · 오른쪽' : ' · 왼쪽') : '';
+  say(`${current} / ${book.pages.length} · ${entry.title}${entry.kind === 'appendix' ? ' (부록)' : ''}${side}`);
+}
+
+function updateFlip() {
+  const total = book.pages.length;
+  $('#prev').disabled = current === 1 && (!splitting() || half === 0);
+  $('#next').disabled = current === total && (!splitting() || half === 1);
+}
+
+// 이전·다음: 한 쪽씩 보기에서는 펼친 면의 왼쪽 → 오른쪽 → 다음 페이지 순서로 넘깁니다.
+function step(direction) {
+  if (splitting() && (direction > 0 ? half === 0 : half === 1)) {
+    half = direction > 0 ? 1 : 0;
+    zoom = 1;
+    viewport.scrollTop = 0;
+    applyZoom();
+    announce();
+    return;
+  }
+  const page = current + direction;
+  if (page >= 1 && page <= book.pages.length) show(page, 'push', direction < 0 ? 'end' : 'start');
+}
+
+function toggleSplit(force) {
+  split = force ?? !split;
+  store.set('manual.split', split ? 'on' : 'off');
+  half = 0;
+  setZoom(1);
+  viewport.scrollTo(0, 0);
+  announce();
+}
+
+/* ── 이어 보기 ─────────────────────────── */
+let resumeTimer;
+function hideResume() { clearTimeout(resumeTimer); $('#resume').hidden = true; }
+function offerResume(saved) {
+  if (current !== 1 || !Number.isInteger(saved) || saved <= 1 || saved > book.pages.length) return;
+  const button = $('#resume');
+  button.textContent = `지난번 보던 ${saved}페이지로 이동`;
+  button.hidden = false;
+  button.onclick = () => { hideResume(); go(saved); };
+  resumeTimer = setTimeout(hideResume, 9000);
+}
 
 /* ── 페이지 목록 ───────────────────────── */
 function buildThumbs() {
@@ -162,30 +224,26 @@ function syncThumbState() {
 }
 
 /* ── 받기 ─────────────────────────────── */
-// 받는 파일 이름은 일부 환경에서 한글이 깨지므로 영문 ID로 만듭니다.
-const pad = number => String(number).padStart(3, '0');
-const fileName = index => `${pad(index + 1)}.${book.pages[index].image.split('.').pop()}`;
-const megabytes = bytes => `${Math.max(1, Math.round(bytes / 1048576))}MB`;
 
 function buildDownloads() {
   // 작업용 원본·클린본은 무손실 PNG zip으로 GitHub 릴리스에 있습니다.
   const extras = (book.downloads ?? []).map(item => {
     const link = element('a', 'menu-item');
     link.href = item.url;
-    link.append(`${item.label} 받기`, element('small', '', [`${item.pages}장`, '무손실 PNG zip', item.bytes && megabytes(item.bytes)].filter(Boolean).join(' · ')));
+    link.append(`${item.label} zip 받기`, element('small', '', [`${item.pages}장`, '무손실 PNG', item.bytes && megabytes(item.bytes)].filter(Boolean).join(' · ')));
     link.onclick = () => toggleDownloads(false);
     return link;
   });
   if (extras.length) {
     const note = element('p', 'menu-note', '클린본은 원본에서 글자만 지운 작업용 이미지입니다.');
-    $('#download-extras').replaceChildren(element('hr'), ...extras, note);
+    $('#download-extras').replaceChildren(...extras, note);
   }
-  $('#download-all-note').textContent = `${book.pages.length}장 · zip`;
+  $('#download-all-note').textContent = [`${book.pages.length}장`, 'JPG', book.koreanBytes && megabytes(book.koreanBytes)].filter(Boolean).join(' · ');
 }
 
 function updateDownloads() {
   $('#download-page').href = book.pages[current - 1].image;
-  $('#download-page').download = `${book.id}-ko-${fileName(current - 1)}`;
+  $('#download-page').download = `${book.id}-ko-${pageFileName(book, current - 1)}`;
   $('#download-page-note').textContent = `${current}페이지`;
 }
 
@@ -196,47 +254,16 @@ function toggleDownloads(force) {
   if (open) toggleHelp(false);
 }
 
-let zipLibrary;
-function loadZip() {
-  zipLibrary ??= new Promise((resolve, reject) => {
-    const script = element('script');
-    script.src = 'assets/vendor/jszip.min.js';
-    script.onload = () => resolve(window.JSZip);
-    script.onerror = () => { zipLibrary = null; reject(new Error('압축 도구를 불러오지 못했습니다.')); };
-    document.head.append(script);
-  });
-  return zipLibrary;
-}
-
 let zipping = false;
 async function downloadAll() {
   if (zipping) return;
   zipping = true;
   $('#download-all').disabled = true;
   toggleDownloads(false);
-  const name = `${book.id}-ko`;
   try {
     say('압축 파일을 준비하는 중입니다.', { sticky: true });
-    const JSZip = await loadZip();
-    const zip = new JSZip();
-    const folder = zip.folder(name);
-    let done = 0;
-    // 이미 압축된 이미지라 다시 압축하지 않고 그대로 담습니다.
-    await Promise.all(book.pages.map(async (entry, index) => {
-      const response = await fetch(entry.image);
-      if (!response.ok) throw new Error(`${index + 1}페이지를 받지 못했습니다.`);
-      folder.file(fileName(index), await response.blob(), { binary: true });
-      say(`페이지를 모으는 중입니다. ${++done} / ${book.pages.length}`, { sticky: true });
-    }));
-    const blob = await zip.generateAsync({ type: 'blob', compression: 'STORE' });
-    const link = element('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = `${name}.zip`;
-    document.body.append(link);
-    link.click();
-    link.remove();
-    setTimeout(() => URL.revokeObjectURL(link.href), 60000);
-    say(`${name}.zip 받기를 시작했습니다.`);
+    const name = await downloadKoreanZip(book, (done, total) => say(`페이지를 모으는 중입니다. ${done} / ${total}`, { sticky: true }));
+    say(`${name} 받기를 시작했습니다.`);
   } catch (error) {
     say(`${error.message} 잠시 후 다시 시도해 주세요.`, { error: true });
   } finally {
@@ -275,7 +302,7 @@ function bindPointer() {
     if (!start) return;
     const dx = event.clientX - start.x, dy = event.clientY - start.y;
     if (zoom === 1 && start.type !== 'mouse' && Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5 && Date.now() - start.time < 800) {
-      go(current + (dx < 0 ? 1 : -1));
+      step(dx < 0 ? 1 : -1);
     }
     viewport.classList.remove('dragging');
     start = null;
@@ -298,13 +325,13 @@ function bindKeys() {
     if (event.target.closest('input,select,textarea,[contenteditable]')) return;
     const key = event.key;
     const actions = {
-      ArrowLeft: () => go(current - 1), ArrowRight: () => go(current + 1),
-      PageUp: () => go(current - 1), PageDown: () => go(current + 1),
+      ArrowLeft: () => step(-1), ArrowRight: () => step(1),
+      PageUp: () => step(-1), PageDown: () => step(1), ' ': () => step(1),
       Home: () => go(1), End: () => go(book.pages.length),
       '+': () => zoomIn(), '=': () => zoomIn(), '-': () => zoomOut(), '0': () => setZoom(1),
-      w: () => { fitWidth = !fitWidth; setZoom(1); }, t: () => toggleThumbs(), f: toggleFullscreen,
+      w: () => { fitWidth = !fitWidth; setZoom(1); }, s: () => toggleSplit(), t: () => toggleThumbs(), f: toggleFullscreen,
       '?': () => toggleHelp(), d: () => toggleDownloads(),
-      Escape: () => { toggleHelp(false); toggleDownloads(false); if (narrow.matches) toggleThumbs(false); },
+      Escape: () => { toggleHelp(false); toggleDownloads(false); hideResume(); if (narrow.matches) toggleThumbs(false); },
     };
     const action = actions[key] ?? actions[key.toLowerCase()];
     if (!action) return;
@@ -325,10 +352,12 @@ function bindControls() {
   }));
   $('#scrub').max = String(total);
   $('#page-total').textContent = String(total);
-  for (const id of ['#page', '#scrub', '#page-input', '#zoom-in', '#zoom-reset', '#fit-width', '#download']) $(id).disabled = false;
+  for (const id of ['#page', '#scrub', '#page-input', '#zoom-in', '#zoom-reset', '#fit-width', '#split', '#download']) $(id).disabled = false;
+  // 펼친 면이 없는 매뉴얼에서는 한 쪽씩 보기 버튼을 숨깁니다.
+  $('#split').hidden = !book.pages.some(isSpread);
 
-  $('#prev').onclick = () => go(current - 1);
-  $('#next').onclick = () => go(current + 1);
+  $('#prev').onclick = () => step(-1);
+  $('#next').onclick = () => step(1);
   $('#page').onchange = event => go(Number(event.target.value));
   $('#scrub').oninput = event => say(pageLabel(book.pages[event.target.value - 1], event.target.value - 1), { sticky: true });
   $('#scrub').onchange = event => go(Number(event.target.value));
@@ -343,6 +372,7 @@ function bindControls() {
   $('#zoom-out').onclick = () => zoomOut();
   $('#zoom-reset').onclick = () => setZoom(1);
   $('#fit-width').onclick = () => { fitWidth = !fitWidth; setZoom(1); };
+  $('#split').onclick = () => toggleSplit();
   $('#toggle-thumbs').onclick = () => toggleThumbs();
   $('#toggle-help').onclick = () => toggleHelp();
   $('#download').onclick = () => toggleDownloads();
@@ -371,12 +401,21 @@ try {
   const match = catalog.manuals.find(entry => entry.id === id);
   if (!match) throw new Error('매뉴얼을 찾을 수 없습니다. 매뉴얼 목록에서 게임을 선택해 주세요.');
   book = await readJSON(match.manifest);
+  const collection = catalog.collections?.find(item => item.id === (match.collection ?? 'mega'));
+  if (collection) {
+    $('#back').href = `index.html#${collection.id}`;
+    $('#collection').textContent = collection.titleEn;
+  }
+  const savedSplit = store.get('manual.split');
+  split = savedSplit ? savedSplit === 'on' : phone.matches;
   $('#title').textContent = book.title;
   $('#edition').textContent = `${book.platform} · ${book.sourceEdition} 기준 · ${book.pageCount}페이지${book.appendixCount ? ` (부록 ${book.appendixCount} 포함)` : ''}`;
   buildThumbs();
   buildDownloads();
   bindControls();
+  const saved = Number(store.get(`manual.last.${book.id}`));
   show(requestedPage(), 'replace');
+  offerResume(saved);
   viewport.focus({ preventScroll: true });
 } catch (error) {
   say(error.message, { error: true });

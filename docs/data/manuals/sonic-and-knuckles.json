@@ -8,6 +8,7 @@
   "appendixCount": 1,
   "cover": "assets/manuals/sonic-and-knuckles/cover.jpg",
   "manifest": "data/manuals/sonic-and-knuckles.json",
+  "koreanBytes": 23122283,
   "downloads": [
     {
       "id": "original",
@@ -261,7 +262,7 @@
     },
     {
       "number": 27,
-      "title": "번역자 부록 - 현재 설정과 당시 매뉴얼의 표현",
+      "title": "번역자 해설·현재 설정과 당시 매뉴얼의 표현",
       "kind": "appendix",
       "image": "assets/manuals/sonic-and-knuckles/027.jpg",
       "thumb": "assets/manuals/sonic-and-knuckles/thumbs/027.jpg",

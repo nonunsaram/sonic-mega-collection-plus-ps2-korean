@@ -2,6 +2,30 @@
   "schemaVersion": 1,
   "version": "1.0.0",
   "updatedAt": "2026-10-04",
+  "collections": [
+    {
+      "id": "mega",
+      "title": "소닉 메가 컬렉션 플러스",
+      "titleEn": "Sonic Mega Collection Plus",
+      "platform": "PS2",
+      "summary": "한국어 패치에 포함된 매뉴얼 7종입니다. 수록 매뉴얼 17종 중 나머지 10종은 번역하지 않았습니다.",
+      "patch": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/tag/v1.0.0",
+      "guide": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean#readme",
+      "target": "일본판 PS2 원본 ISO",
+      "release": "data/release.json"
+    },
+    {
+      "id": "gems",
+      "title": "소닉 젬스 컬렉션",
+      "titleEn": "Sonic Gems Collection",
+      "platform": "GameCube",
+      "summary": "한국어 패치에 포함된 매뉴얼 5종입니다. 수록 매뉴얼 11종 중 나머지 게임기어 매뉴얼 6종은 번역하지 않았습니다.",
+      "patch": "https://github.com/nonunsaram/sonic-gems-collection-gc-korean/releases/tag/v1.0.0",
+      "guide": "https://github.com/nonunsaram/sonic-gems-collection-gc-korean#readme",
+      "target": "일본판 GC 원본 ISO",
+      "release": "data/gems-release.json"
+    }
+  ],
   "manuals": [
     {
       "id": "sonic1",
@@ -62,7 +86,7 @@
       "id": "sonic-3d-blast",
       "title": "소닉 3D 블래스트",
       "platform": "메가 드라이브",
-      "sourceEdition": "해외 메가 드라이브 영문판",
+      "sourceEdition": "영어판",
       "pageCount": 11,
       "manualPageCount": 10,
       "appendixCount": 1,
@@ -73,7 +97,7 @@
       "id": "mean-bean-machine",
       "title": "닥터 에그맨의 민빈 머신",
       "platform": "메가 드라이브",
-      "sourceEdition": "해외 메가 드라이브 영문판",
+      "sourceEdition": "영어판",
       "pageCount": 12,
       "manualPageCount": 11,
       "appendixCount": 1,

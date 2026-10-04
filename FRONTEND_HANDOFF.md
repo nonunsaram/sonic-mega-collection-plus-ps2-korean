@@ -11,12 +11,14 @@ docs/
   assets/css/styles.css      모든 스타일
   assets/js/data.js          JSON 읽기와 DOM 생성 공통 함수
   assets/js/catalog.js       목록, 검색, 체크섬 표시
-  assets/js/reader.js        페이지 이동, 확대, URL 및 키보드 처리
+  assets/js/reader.js        페이지 이동, 확대, 한 쪽씩 보기, 이어 보기, URL 및 키보드 처리
+  assets/js/zip.js           한국어 zip 만들기 (목록·뷰어 공용)
   assets/manuals/{id}/       cover.jpg, 001.jpg부터 시작하는 페이지
   assets/manuals/{id}/thumbs/ 뷰어 페이지 목록용 썸네일 (높이 360px)
   data/catalog.json          매뉴얼 목록
   data/manuals/{id}.json     각 매뉴얼 페이지와 이미지 크기
-  data/release.json          릴리스 링크 및 ISO/패치 체크섬
+  data/release.json          메가 컬렉션 릴리스 링크 및 ISO/패치 체크섬
+  data/gems-release.json     젬스 컬렉션 ISO/패치 체크섬
 release/
   manifest.json              동결 및 패치 검증 기록
   SHA256SUMS.txt              배포 파일 체크섬
@@ -27,6 +29,9 @@ release/
 
 `catalog.json`: `schemaVersion`, `version`, `updatedAt`, `manuals[]`.
 매뉴얼 공통 필드: `id`, `title`, `platform`, `sourceEdition`, `pageCount`, `manualPageCount`, `appendixCount`, `cover`, `manifest`.
+`collections[]`: 목록 화면의 컬렉션 구역(`mega`, `gems`)과 패치·안내 링크, 검증 정보 파일(`release`). 매뉴얼의 `collection`이 없으면 `mega`입니다.
+
+개별 매뉴얼 JSON의 `koreanBytes`는 한국어 페이지 JPG 합계, `downloads[]`는 GitHub 릴리스 `manual-files`의 원본·클린본 PNG zip입니다. 한국어 zip은 브라우저에서 사이트의 JPG를 묶어 만듭니다(`assets/js/zip.js`).
 
 개별 매뉴얼 JSON에는 공통 필드와 `pages[]`가 있습니다. 페이지는 `number` (1부터 시작), `title`, `kind` (`manual` 또는 `appendix`), `image`, `thumb`, `width`, `height`를 가집니다. `thumb`이 없으면 뷰어는 `image`를 썸네일로 씁니다. 경로는 **docs 루트 기준** 상대 경로입니다. 페이지 순서는 JSON 배열 순서입니다. 실제 원본의 인쇄 쪽수와 웹 뷰어의 페이지 번호는 다를 수 있습니다.
 
@@ -45,7 +50,7 @@ release/
 
 ## 뷰어 기능
 
-페이지 목록(썸네일), 좌우 넘김 버튼, 페이지 번호 입력·슬라이더·목록 선택, 화면 맞춤/폭 맞춤, 확대(최대 400%)와 끌어서 이동, 더블클릭 확대, 전체 화면, 모바일 스와이프, 앞뒤 페이지 미리 불러오기를 지원합니다. 키보드: `←` `→` `Home` `End` `+` `-` `0` `W` `T` `F` `?`.
+페이지 목록(썸네일), 좌우 넘김 버튼, 페이지 번호 입력·슬라이더·목록 선택, 화면 맞춤/폭 맞춤, 확대(최대 400%)와 끌어서 이동, 더블클릭 확대, 전체 화면, 모바일 스와이프, 앞뒤 페이지 미리 불러오기를 지원합니다. 펼친 면을 왼쪽·오른쪽 한 쪽씩 크게 보기(휴대폰 기본), 지난번 보던 페이지로 이어 보기를 지원합니다. 키보드: `←` `→` `Space` `Home` `End` `+` `-` `0` `W` `S` `T` `D` `F` `?`.
 
 디자인 토큰과 Noto Sans KR 글꼴(Google Fonts, SIL OFL)은 노는사람 한국어화 아카이브(`nonunsaram.github.io`)와 같습니다.
 

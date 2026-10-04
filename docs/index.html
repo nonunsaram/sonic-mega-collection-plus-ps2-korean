@@ -32,34 +32,9 @@
 
 <main id="main">
   <label class="search"><span class="sr-only">매뉴얼 검색</span><input id="search" type="search" placeholder="게임 이름으로 찾기" autocomplete="off"></label>
+  <p class="files-note">카드 아래에서 한국어·원본·클린본(원본에서 글자만 지운 본)을 zip으로 받을 수 있습니다.</p>
   <p id="status" class="sr-only" role="status">매뉴얼을 불러오는 중입니다.</p>
-
-  <section id="mega" class="panel" aria-labelledby="mega-heading">
-    <div class="panel-head">
-      <div><p class="eyebrow">Sonic Mega Collection Plus · PS2</p><h2 id="mega-heading">소닉 메가 컬렉션 플러스</h2></div>
-      <div class="panel-actions">
-        <a class="btn primary" href="https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/tag/v1.0.0">한국어 패치 받기</a>
-        <a class="btn" href="#patch">적용 안내</a>
-      </div>
-    </div>
-    <p class="muted">한국어 패치에 포함된 매뉴얼 7종입니다. 수록 매뉴얼 17종 중 나머지 10종은 번역하지 않았습니다.</p>
-    <div id="catalog" class="manuals"></div>
-  </section>
-
-  <section id="gems" class="panel" aria-labelledby="gems-heading" hidden>
-    <div class="panel-head">
-      <div><p class="eyebrow">Sonic Gems Collection</p><h2 id="gems-heading">소닉 젬스 컬렉션</h2></div>
-    </div>
-    <p class="muted">원본과 클린본(원본에서 글자만 지운 본)은 작업용 무손실 PNG로 받을 수 있습니다.</p>
-    <div id="gems-catalog" class="manuals"></div>
-  </section>
-
-  <section id="patch" class="panel" aria-labelledby="patch-heading">
-    <p class="eyebrow">Patch Guide</p>
-    <h2 id="patch-heading">메가 컬렉션 패치 적용 안내</h2>
-    <p class="muted">일본판 PS2 원본 ISO에 적용하는 xdelta 패치입니다. 원본 파일의 SHA-256을 확인한 뒤 적용해 주세요. 자세한 사용법은 <a href="https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean#readme">저장소 안내</a>에 있습니다.</p>
-    <details><summary>원본 및 패치 검증 정보</summary><div id="checksums"></div></details>
-  </section>
+  <div id="collections"></div>
 </main>
 
 <footer>
