@@ -1,0 +1,147 @@
+{
+  "id": "sonic-cd-pc",
+  "title": "소닉 CD (PC판)",
+  "platform": "Windows",
+  "sourceEdition": "일본어판",
+  "collection": "gems",
+  "pageCount": 13,
+  "manualPageCount": 13,
+  "appendixCount": 0,
+  "cover": "assets/manuals/sonic-cd-pc/cover.jpg",
+  "manifest": "data/manuals/sonic-cd-pc.json",
+  "downloads": [
+    {
+      "id": "original",
+      "label": "원본",
+      "pages": 13,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-cd-pc-original.zip",
+      "bytes": 7481058
+    },
+    {
+      "id": "clean",
+      "label": "클린본",
+      "pages": 13,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-cd-pc-clean.zip",
+      "bytes": 61239741
+    }
+  ],
+  "pages": [
+    {
+      "number": 1,
+      "title": "1페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd-pc/001.jpg",
+      "thumb": "assets/manuals/sonic-cd-pc/thumbs/001.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "number": 2,
+      "title": "2페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd-pc/002.jpg",
+      "thumb": "assets/manuals/sonic-cd-pc/thumbs/002.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 3,
+      "title": "3페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd-pc/003.jpg",
+      "thumb": "assets/manuals/sonic-cd-pc/thumbs/003.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 4,
+      "title": "4페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd-pc/004.jpg",
+      "thumb": "assets/manuals/sonic-cd-pc/thumbs/004.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 5,
+      "title": "5페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd-pc/005.jpg",
+      "thumb": "assets/manuals/sonic-cd-pc/thumbs/005.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 6,
+      "title": "6페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd-pc/006.jpg",
+      "thumb": "assets/manuals/sonic-cd-pc/thumbs/006.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 7,
+      "title": "7페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd-pc/007.jpg",
+      "thumb": "assets/manuals/sonic-cd-pc/thumbs/007.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 8,
+      "title": "8페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd-pc/008.jpg",
+      "thumb": "assets/manuals/sonic-cd-pc/thumbs/008.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 9,
+      "title": "9페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd-pc/009.jpg",
+      "thumb": "assets/manuals/sonic-cd-pc/thumbs/009.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 10,
+      "title": "10페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd-pc/010.jpg",
+      "thumb": "assets/manuals/sonic-cd-pc/thumbs/010.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 11,
+      "title": "11페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd-pc/011.jpg",
+      "thumb": "assets/manuals/sonic-cd-pc/thumbs/011.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 12,
+      "title": "12페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd-pc/012.jpg",
+      "thumb": "assets/manuals/sonic-cd-pc/thumbs/012.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 13,
+      "title": "13페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd-pc/013.jpg",
+      "thumb": "assets/manuals/sonic-cd-pc/thumbs/013.jpg",
+      "width": 1707,
+      "height": 2560
+    }
+  ]
+}

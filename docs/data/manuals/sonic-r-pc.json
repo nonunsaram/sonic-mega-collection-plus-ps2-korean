@@ -1,0 +1,165 @@
+{
+  "id": "sonic-r-pc",
+  "title": "소닉 R (PC판)",
+  "platform": "Windows",
+  "sourceEdition": "일본어판",
+  "collection": "gems",
+  "pageCount": 15,
+  "manualPageCount": 15,
+  "appendixCount": 0,
+  "cover": "assets/manuals/sonic-r-pc/cover.jpg",
+  "manifest": "data/manuals/sonic-r-pc.json",
+  "downloads": [
+    {
+      "id": "original",
+      "label": "원본",
+      "pages": 15,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-r-pc-original.zip",
+      "bytes": 6524410
+    },
+    {
+      "id": "clean",
+      "label": "클린본",
+      "pages": 15,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-r-pc-clean.zip",
+      "bytes": 69202540
+    }
+  ],
+  "pages": [
+    {
+      "number": 1,
+      "title": "1페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/001.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/001.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "number": 2,
+      "title": "2페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/002.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/002.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 3,
+      "title": "3페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/003.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/003.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 4,
+      "title": "4페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/004.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/004.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 5,
+      "title": "5페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/005.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/005.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 6,
+      "title": "6페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/006.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/006.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 7,
+      "title": "7페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/007.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/007.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 8,
+      "title": "8페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/008.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/008.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 9,
+      "title": "9페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/009.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/009.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 10,
+      "title": "10페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/010.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/010.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 11,
+      "title": "11페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/011.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/011.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 12,
+      "title": "12페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/012.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/012.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 13,
+      "title": "13페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/013.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/013.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 14,
+      "title": "14페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/014.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/014.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 15,
+      "title": "15페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r-pc/015.jpg",
+      "thumb": "assets/manuals/sonic-r-pc/thumbs/015.jpg",
+      "width": 1707,
+      "height": 2560
+    }
+  ]
+}

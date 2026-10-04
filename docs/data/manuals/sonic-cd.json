@@ -1,0 +1,201 @@
+{
+  "id": "sonic-cd",
+  "title": "소닉 CD",
+  "platform": "메가 CD",
+  "sourceEdition": "일본어판",
+  "collection": "gems",
+  "pageCount": 19,
+  "manualPageCount": 18,
+  "appendixCount": 1,
+  "cover": "assets/manuals/sonic-cd/cover.jpg",
+  "manifest": "data/manuals/sonic-cd.json",
+  "downloads": [
+    {
+      "id": "original",
+      "label": "원본",
+      "pages": 18,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-cd-original.zip",
+      "bytes": 130154920
+    },
+    {
+      "id": "clean",
+      "label": "클린본",
+      "pages": 19,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-cd-clean.zip",
+      "bytes": 120944765
+    }
+  ],
+  "pages": [
+    {
+      "number": 1,
+      "title": "표지·뒤표지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/001.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/001.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 2,
+      "title": "인사말·목차",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/002.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/002.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 3,
+      "title": "스토리",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/003.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/003.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 4,
+      "title": "등장인물",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/004.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/004.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 5,
+      "title": "조작 방법",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/005.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/005.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 6,
+      "title": "시작하기·데이터 관리",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/006.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/006.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 7,
+      "title": "데이터 복사",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/007.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/007.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 8,
+      "title": "백업 RAM 간 복사·삭제·용량 부족",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/008.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/008.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 9,
+      "title": "게임 방법·타임 워프·화면 표시",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/009.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/009.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 10,
+      "title": "링·1UP·아이템",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/010.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/010.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 11,
+      "title": "점수·스페셜 스테이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/011.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/011.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 12,
+      "title": "타임 스톤·스페셜 스테이지 장치",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/012.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/012.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 13,
+      "title": "타임 어택",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/013.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/013.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 14,
+      "title": "라운드 소개 1",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/014.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/014.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 15,
+      "title": "라운드 소개 2",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/015.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/015.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 16,
+      "title": "적 캐릭터 1",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/016.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/016.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 17,
+      "title": "적 캐릭터 2·세 가지 수수께끼",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/017.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/017.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 18,
+      "title": "디스크 사용 주의 사항·고객 안내",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-cd/018.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/018.jpg",
+      "width": 2560,
+      "height": 1279
+    },
+    {
+      "number": 19,
+      "title": "번역자 부록·CD 원문과 현재 공식 소개",
+      "kind": "appendix",
+      "image": "assets/manuals/sonic-cd/019.jpg",
+      "thumb": "assets/manuals/sonic-cd/thumbs/019.jpg",
+      "width": 2560,
+      "height": 1279
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "sonic-r",
+  "title": "소닉 R",
+  "platform": "세가 새턴",
+  "sourceEdition": "일본어판",
+  "collection": "gems",
+  "pageCount": 17,
+  "manualPageCount": 17,
+  "appendixCount": 0,
+  "cover": "assets/manuals/sonic-r/cover.jpg",
+  "manifest": "data/manuals/sonic-r.json",
+  "downloads": [
+    {
+      "id": "original",
+      "label": "원본",
+      "pages": 17,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-r-original.zip",
+      "bytes": 8157700
+    },
+    {
+      "id": "clean",
+      "label": "클린본",
+      "pages": 17,
+      "url": "https://github.com/nonunsaram/sonic-mega-collection-plus-ps2-korean/releases/download/manual-files/sonic-r-clean.zip",
+      "bytes": 65160739
+    }
+  ],
+  "pages": [
+    {
+      "number": 1,
+      "title": "1페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/001.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/001.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "number": 2,
+      "title": "2페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/002.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/002.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 3,
+      "title": "3페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/003.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/003.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 4,
+      "title": "4페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/004.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/004.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 5,
+      "title": "5페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/005.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/005.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 6,
+      "title": "6페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/006.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/006.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 7,
+      "title": "7페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/007.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/007.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 8,
+      "title": "8페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/008.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/008.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 9,
+      "title": "9페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/009.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/009.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 10,
+      "title": "10페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/010.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/010.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 11,
+      "title": "11페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/011.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/011.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 12,
+      "title": "12페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/012.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/012.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 13,
+      "title": "13페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/013.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/013.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 14,
+      "title": "14페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/014.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/014.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 15,
+      "title": "15페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/015.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/015.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 16,
+      "title": "16페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/016.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/016.jpg",
+      "width": 2560,
+      "height": 1920
+    },
+    {
+      "number": 17,
+      "title": "17페이지",
+      "kind": "manual",
+      "image": "assets/manuals/sonic-r/017.jpg",
+      "thumb": "assets/manuals/sonic-r/thumbs/017.jpg",
+      "width": 1707,
+      "height": 2560
+    }
+  ]
+}
