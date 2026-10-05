@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>한국어 매뉴얼 뷰어</title>
 <meta name="theme-color" content="#3a9bff">
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
@@ -20,7 +20,7 @@
     <img class="brand-avatar" src="assets/img/avatar.jpg" alt="" width="36" height="36">
     <span class="brand-text"><span class="brand-title">매뉴얼 목록</span><span id="collection" class="brand-en" lang="en">Sonic Korean Manuals</span></span>
   </a>
-  <div class="reader-title"><h1 id="title">매뉴얼</h1><p id="edition"></p></div>
+  <div class="reader-title"><h1><span id="title">매뉴얼</span> <small id="edition"></small></h1><p id="page-info" aria-live="polite"></p></div>
   <nav class="site-nav" aria-label="사이트">
     <a href="https://nonunsaram.github.io/sonic-archive/">한국어 아카이브</a>
   </nav>
@@ -29,11 +29,13 @@
   <aside id="thumbs" class="thumbs" aria-label="페이지 목록"><ol id="thumb-list"></ol></aside>
   <div class="stage">
     <p id="status" class="reader-status" role="status" aria-live="polite">매뉴얼을 불러오는 중입니다.</p>
-    <button id="prev" class="flip prev" type="button" disabled aria-label="이전 페이지">‹</button>
-    <div id="viewport" class="viewport loading" tabindex="-1" data-fit="page">
-      <img id="image" alt="" draggable="false">
+    <div class="view">
+      <button id="prev" class="flip prev" type="button" disabled aria-label="이전 페이지" data-step="-1">‹</button>
+      <div id="viewport" class="viewport loading" tabindex="-1" data-fit="page">
+        <img id="image" alt="" draggable="false">
+      </div>
+      <button id="next" class="flip next" type="button" disabled aria-label="다음 페이지" data-step="1">›</button>
     </div>
-    <button id="next" class="flip next" type="button" disabled aria-label="다음 페이지">›</button>
     <div id="help" class="popover help" hidden>
       <h2>사용 방법</h2>
       <dl>
@@ -61,13 +63,15 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><span class="hide-narrow">목록</span>
         </button>
       </div>
+      <button class="tool step only-phone" type="button" disabled aria-label="이전 페이지" data-step="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
       <label class="counter"><span class="sr-only">페이지 번호</span><input id="page-input" type="text" inputmode="numeric" autocomplete="off" disabled> / <span id="page-total">-</span></label>
+      <button class="tool step only-phone" type="button" disabled aria-label="다음 페이지" data-step="1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
       <input id="scrub" class="scrub" type="range" min="1" max="1" value="1" disabled aria-label="페이지 이동">
       <label class="hide-narrow"><span class="sr-only">페이지 선택</span><select id="page" disabled></select></label>
       <div class="group">
         <button id="zoom-out" class="tool hide-phone" type="button" disabled title="축소 (-)" aria-label="축소"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M8 11h6M21 21l-5-5"/></svg></button>
         <button id="zoom-reset" class="tool" type="button" disabled title="화면 맞춤 (0)"><span id="zoom-label">맞춤</span></button>
-        <button id="zoom-in" class="tool" type="button" disabled title="확대 (+)" aria-label="확대"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M8 11h6M11 8v6M21 21l-5-5"/></svg></button>
+        <button id="zoom-in" class="tool hide-phone" type="button" disabled title="확대 (+)" aria-label="확대"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M8 11h6M11 8v6M21 21l-5-5"/></svg></button>
         <button id="fit-width" class="tool hide-narrow" type="button" disabled aria-pressed="false" title="폭 맞춤 (W)">폭 맞춤</button>
         <button id="split" class="tool" type="button" disabled aria-pressed="false" title="한 쪽씩 보기 (S)" aria-label="한 쪽씩 보기"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v14M12 6c-2-1.5-5-2-8-1.5v14c3-.5 6 0 8 1.5M12 6c2-1.5 5-2 8-1.5v14c-3-.5-6 0-8 1.5"/></svg><span class="hide-narrow">한 쪽씩</span></button>
       </div>
