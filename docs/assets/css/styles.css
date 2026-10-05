@@ -116,7 +116,9 @@ footer a { color: inherit; }
 .reader-body .brand-avatar { width: 36px; height: 36px; }
 .reader-title { min-width: 0; display: flex; flex-direction: column; justify-content: center; line-height: 1.25; padding-left: 12px; border-left: 2px solid rgba(31,182,255,.25); }
 .reader-title h1 { margin: 0; font-size: 16px; font-weight: 900; letter-spacing: -.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.reader-title p { margin: 0; font-size: 12px; font-weight: 700; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.reader-title h1 small { margin-left: 6px; font-size: 12px; font-weight: 700; letter-spacing: 0; color: var(--muted); }
+/* 지금 보는 페이지: 매뉴얼 위에 띄우지 않고 상단 바 안에 늘 보입니다. */
+.reader-title p { margin: 0; font-size: 13px; font-weight: 800; color: var(--sky-deep); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-variant-numeric: tabular-nums; }
 .reader-main { flex: 1; min-height: 0; display: flex; gap: 10px; width: 100%; max-width: none; margin: 0; padding: 10px 12px 12px; }
 .thumbs { flex: none; width: 200px; overflow-y: auto; padding: 10px; border: 1px solid var(--stroke); border-radius: 28px; background: var(--glass); box-shadow: var(--shadow); backdrop-filter: blur(22px) saturate(1.3); -webkit-backdrop-filter: blur(22px) saturate(1.3); scrollbar-width: thin; scrollbar-color: rgba(11,99,209,.35) transparent; }
 .thumbs ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; }
@@ -128,23 +130,28 @@ footer a { color: inherit; }
 .thumb b { color: var(--sky-deep); font-weight: 900; margin-right: 4px; }
 .thumb .kind { display: inline; margin-left: 4px; padding: 0 6px; border-radius: 999px; background: #fff2cc; color: #8a5a00; font-size: 10px; }
 .stage { position: relative; flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
-.viewport { position: relative; flex: 1; min-height: 0; overflow: auto; display: grid; place-items: start; padding: 14px; border-radius: 28px; outline: none; scrollbar-gutter: stable both-edges; scrollbar-width: thin; scrollbar-color: rgba(11,99,209,.35) transparent; touch-action: pan-y pinch-zoom; }
+.view { position: relative; flex: 1; min-height: 0; display: flex; }
+/* 좌우 여백에 넘김 버튼 자리를 비워 두어 버튼이 매뉴얼을 가리지 않습니다. */
+.viewport { position: relative; flex: 1; min-width: 0; min-height: 0; overflow: auto; display: grid; place-items: start; padding: 14px 66px; border-radius: 28px; outline: none; scrollbar-gutter: stable both-edges; scrollbar-width: thin; scrollbar-color: rgba(11,99,209,.35) transparent; touch-action: pan-y pinch-zoom; }
 .viewport img { display: block; margin: auto; max-width: none; border-radius: 6px; box-shadow: 0 16px 40px rgba(10,60,140,.3), 0 0 0 1px rgba(255,255,255,.8); user-select: none; -webkit-user-drag: none; transition: opacity .15s; }
 .viewport.loading img { opacity: .35; }
 .viewport.split:not(.zoomed) { overflow-x: hidden; }
+/* 한 쪽씩 보기에서는 그림자가 화면 가장자리에서 잘려 보이므로 테두리만 남깁니다. */
+.viewport.split:not(.zoomed) img { box-shadow: 0 0 0 1px rgba(255,255,255,.8); clip-path: inset(0 50% 0 0); }
+.viewport.split.right:not(.zoomed) img { clip-path: inset(0 0 0 50%); }
 .viewport.zoomed { cursor: grab; touch-action: auto; }
 .viewport.zoomed.dragging { cursor: grabbing; }
-.flip { position: absolute; top: 50%; z-index: 2; width: 48px; height: 48px; margin-top: -48px; border: 1px solid #fff; border-radius: 50%; background: linear-gradient(180deg, #fff, #d6ecff); color: var(--sky-deep); font-size: 28px; font-weight: 900; line-height: 1; box-shadow: 0 6px 16px rgba(20,100,200,.25); opacity: .9; transition: opacity .15s, transform .12s; }
+.flip { position: absolute; top: 50%; z-index: 2; width: 48px; height: 48px; margin-top: -24px; border: 1px solid #fff; border-radius: 50%; background: linear-gradient(180deg, #fff, #d6ecff); color: var(--sky-deep); font-size: 28px; font-weight: 900; line-height: 1; box-shadow: 0 6px 16px rgba(20,100,200,.25); opacity: .9; transition: opacity .15s, transform .12s; }
 .flip:hover:not(:disabled) { opacity: 1; transform: scale(1.08); }
 .flip:disabled { opacity: 0; pointer-events: none; }
-.flip.prev { left: 10px; }
-.flip.next { right: 10px; }
+.flip.prev { left: var(--flip-inset, 8px); }
+.flip.next { right: var(--flip-inset, 8px); }
 .reader-status { position: absolute; left: 50%; top: 12px; z-index: 3; transform: translateX(-50%); max-width: calc(100% - 32px); margin: 0; padding: 6px 16px; border: 1px solid #fff; border-radius: 999px; background: var(--glass-strong); color: var(--ink); font-size: 13px; font-weight: 800; box-shadow: 0 6px 16px rgba(20,100,200,.18); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); pointer-events: none; transition: opacity .3s; }
 .reader-status:empty, .reader-status.quiet { opacity: 0; }
 .resume { position: absolute; left: 50%; bottom: 66px; z-index: 4; transform: translateX(-50%); max-width: calc(100% - 32px); height: 40px; padding: 0 18px; border: 1px solid #8fdcff; border-radius: 999px; background: linear-gradient(180deg, #6fd6ff, #1a8cff); color: #fff; font-size: 13px; font-weight: 900; white-space: nowrap; text-shadow: 0 1px 1px rgba(0,60,140,.35); box-shadow: 0 8px 20px rgba(26,140,255,.35); }
 .resume[hidden] { display: none; }
 .reader-status.error { opacity: 1; }
-.toolbar { flex: none; display: flex; align-items: center; gap: 10px; margin: 0 auto; width: 100%; max-width: 980px; padding: 6px; padding-bottom: max(6px, env(safe-area-inset-bottom)); border: 1px solid var(--stroke); border-radius: 999px; background: var(--glass-strong); box-shadow: var(--shadow); backdrop-filter: blur(18px) saturate(1.4); -webkit-backdrop-filter: blur(18px) saturate(1.4); font-size: 13px; }
+.toolbar { flex: none; display: flex; align-items: center; gap: 10px; margin: 0 auto; width: 100%; max-width: 980px; padding: 6px; border: 1px solid var(--stroke); border-radius: 999px; background: var(--glass-strong); box-shadow: var(--shadow); backdrop-filter: blur(18px) saturate(1.4); -webkit-backdrop-filter: blur(18px) saturate(1.4); font-size: 13px; }
 .toolbar .group { display: flex; align-items: center; gap: 4px; }
 .tool { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-width: 38px; height: 38px; padding: 0 12px; border: 1px solid transparent; border-radius: 999px; background: transparent; color: var(--ink); font-size: 13px; font-weight: 800; text-decoration: none; white-space: nowrap; }
 .tool:hover:not(:disabled) { color: var(--sky-deep); background: rgba(31,182,255,.12); }
@@ -155,7 +162,7 @@ footer a { color: inherit; }
 .counter input { width: 3.2em; height: 30px; padding: 0 4px; border: 1px solid #c4e3ff; border-radius: 999px; background: #fff; text-align: center; font-weight: 900; }
 .scrub { flex: 1; min-width: 60px; accent-color: var(--aqua); }
 .toolbar select { height: 32px; max-width: 190px; padding: 0 10px; border: 1px solid #c4e3ff; border-radius: 999px; background: #fff; font-weight: 700; }
-.popover { position: absolute; right: 12px; bottom: 66px; z-index: 5; width: min(300px, calc(100% - 24px)); padding: 8px; border: 1px solid #fff; border-radius: 24px; background: rgba(255,255,255,.95); box-shadow: 0 16px 44px rgba(10,60,140,.28); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+.popover { position: absolute; right: 12px; bottom: 66px; z-index: 5; width: min(300px, calc(100% - 24px)); max-height: calc(100% - 72px); overflow-y: auto; padding: 8px; border: 1px solid #fff; border-radius: 24px; background: rgba(255,255,255,.95); box-shadow: 0 16px 44px rgba(10,60,140,.28); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
 .popover[hidden] { display: none; }
 .menu-item { display: block; width: 100%; padding: 10px 14px; border: 0; border-radius: 16px; background: transparent; color: var(--ink); font-size: 14px; font-weight: 900; text-align: left; text-decoration: none; }
 .menu-item:hover:not(:disabled) { background: linear-gradient(180deg, #fff, #e3f2ff); color: var(--sky-deep); }
@@ -170,23 +177,39 @@ footer a { color: inherit; }
 kbd { display: inline-block; min-width: 20px; padding: 0 5px; border: 1px solid #c4e3ff; border-bottom-width: 2px; border-radius: 6px; background: #fff; font: 800 11px/18px var(--font); text-align: center; }
 .reader-body.no-thumbs .thumbs { display: none; }
 .reader-body:fullscreen .site-header { display: none; }
-.only-narrow { display: none !important; }
+.only-narrow, .only-phone { display: none !important; }
 
-@media (max-width: 860px) {
-  .site-nav, .hide-narrow { display: none !important; }
+@media (max-width: 860px), (max-height: 520px) {
+  .site-nav, .hide-narrow, .reader-title h1 small { display: none !important; }
   .only-narrow { display: inline-flex !important; }
   .reader-main { position: relative; padding: 8px; }
-  .thumbs { position: absolute; z-index: 10; inset: 8px auto 8px 8px; width: min(78vw, 300px); transform: translateX(calc(-100% - 16px)); transition: transform .2s; background: rgba(255,255,255,.92); }
+  /* 서랍은 아래 메뉴를 덮지 않아 목록 버튼으로 다시 닫을 수 있습니다. */
+  .thumbs { position: absolute; z-index: 10; inset: 8px auto 66px 8px; width: min(78vw, 300px); transform: translateX(calc(-100% - 16px)); transition: transform .2s; background: rgba(255,255,255,.92); }
   .reader-body.thumbs-open .thumbs { transform: none; }
   .reader-body.no-thumbs .thumbs { display: block; }
   .thumbs ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .flip { width: 40px; height: 40px; margin-top: -40px; font-size: 22px; }
-  .flip.prev { left: 4px; } .flip.next { right: 4px; }
-  .viewport { padding: 6px; }
+  .flip { width: 40px; height: 40px; margin-top: -20px; font-size: 22px; }
+  .view { --flip-min: 4px; }
+  .viewport { padding: 6px 50px; }
   .toolbar { gap: 2px; }
   .popover { bottom: 60px; right: 8px; }
   .resume { bottom: 60px; }
   .manuals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+/* 가로로 눕힌 휴대폰: 위아래가 좁으므로 상단 바와 메뉴를 얇게 합니다. */
+@media (max-height: 520px) {
+  .reader-body .site-header { margin: 6px 8px 0; width: calc(100% - 16px); padding: 3px 6px 3px 3px; }
+  .reader-body .brand-avatar { width: 30px; height: 30px; }
+  .reader-body .brand-text { display: none; }
+  .reader-title { flex-direction: row; align-items: baseline; gap: 10px; }
+  .reader-main { padding: 6px 8px 8px; }
+  .stage { gap: 6px; }
+  .viewport { padding-block: 2px; }
+  .toolbar { max-width: 640px; padding: 3px; }
+  .tool { height: 34px; }
+  .popover, .resume { bottom: 50px; }
+  .thumbs { inset: 6px auto 52px 8px; }
+  .thumbs ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 760px) {
   .site-header { margin: 8px 8px 0; top: 8px; }
@@ -199,7 +222,9 @@ kbd { display: inline-block; min-width: 20px; padding: 0 5px; border: 1px solid 
 @media (max-width: 560px) {
   .reader-body .brand-text { display: none; }
   .reader-title { padding-left: 10px; }
-  .toolbar select, .scrub { display: none; }
+  .toolbar select, .scrub, .flip { display: none; }
+  .only-phone { display: inline-flex !important; }
+  .viewport { padding: 6px; }
   .toolbar { justify-content: space-between; }
   .tool { min-width: 34px; padding: 0 8px; }
   .hide-phone { display: none !important; }

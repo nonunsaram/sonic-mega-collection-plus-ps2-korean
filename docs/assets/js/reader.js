@@ -3,12 +3,13 @@ import { readJSON, element } from './data.js';
 const $ = selector => document.querySelector(selector);
 const body = document.body;
 const image = $('#image'), viewport = $('#viewport'), status = $('#status');
-const narrow = matchMedia('(max-width: 860px)');
+// 좁은 화면과 가로로 눕힌 휴대폰(높이가 낮은 화면)은 페이지 목록을 서랍으로 엽니다.
+const narrow = matchMedia('(max-width: 860px), (max-height: 520px)');
 const phone = matchMedia('(max-width: 560px)');
 const ZOOM_STEPS = [1, 1.5, 2, 3, 4];
 
 let book, current = 1, zoom = 1, fitWidth = false, statusTimer;
-// 한 쪽씩 보기: 좌우로 펼친 면을 왼쪽·오른쪽으로 나눠 크게 봅니다. 휴대폰에서는 기본으로 켭니다.
+// 한 쪽씩 보기: 좌우로 펼친 면을 왼쪽·오른쪽으로 나눠 크게 봅니다. 휴대폰과 세로로 세운 태블릿에서는 기본으로 켭니다.
 let split, half = 0;
 
 const store = {
@@ -54,6 +55,7 @@ function applyZoom(focus) {
   viewport.dataset.fit = fitWidth ? 'width' : 'page';
   viewport.classList.toggle('zoomed', zoomed);
   viewport.classList.toggle('split', splitting());
+  viewport.classList.toggle('right', splitting() && half === 1);
   const base = baseSize();
   image.style.width = `${Math.max(1, Math.round(base.width * zoom))}px`;
   image.style.height = `${Math.max(1, Math.round(base.height * zoom))}px`;
@@ -63,6 +65,7 @@ function applyZoom(focus) {
   $('#fit-width').setAttribute('aria-pressed', String(fitWidth));
   $('#split').setAttribute('aria-pressed', String(split));
   updateFlip();
+  placeFlip(zoomed ? 0 : splitting() ? base.width / 2 : base.width);
   if (!zoomed) {
     if (splitting()) viewport.scrollLeft = half ? viewport.scrollWidth : 0;
     return;
@@ -129,16 +132,29 @@ function show(page, navigation = 'push', side = 'start') {
 
 const go = page => { if (page >= 1 && page <= book.pages.length && page !== current) show(page); };
 
+// 지금 보는 페이지는 상단 바 제목 아래에 늘 표시합니다 (매뉴얼을 가리지 않도록).
 function announce() {
   const entry = book.pages[current - 1];
   const side = splitting() ? (half ? ' · 오른쪽' : ' · 왼쪽') : '';
-  say(`${current} / ${book.pages.length} · ${entry.title}${entry.kind === 'appendix' ? ' (부록)' : ''}${side}`);
+  $('#page-info').textContent = `${current} / ${book.pages.length} · ${entry.title}${entry.kind === 'appendix' ? ' (부록)' : ''}${side}`;
+  status.classList.remove('error');
+  status.classList.add('quiet');
+}
+
+// 넘김 버튼은 화면 끝이 아니라 매뉴얼 바로 옆에 둡니다 (빈 공간이 넓은 큰 화면에서 손이 덜 갑니다).
+function placeFlip(imageWidth) {
+  const view = viewport.parentElement;
+  const button = $('#prev').offsetWidth || 48;
+  const min = parseFloat(getComputedStyle(view).getPropertyValue('--flip-min')) || 8;
+  const inset = Math.max(min, (view.clientWidth - imageWidth) / 2 - button - 14);
+  view.style.setProperty('--flip-inset', `${Math.round(inset)}px`);
 }
 
 function updateFlip() {
   const total = book.pages.length;
-  $('#prev').disabled = current === 1 && (!splitting() || half === 0);
-  $('#next').disabled = current === total && (!splitting() || half === 1);
+  const atStart = current === 1 && (!splitting() || half === 0);
+  const atEnd = current === total && (!splitting() || half === 1);
+  for (const button of document.querySelectorAll('[data-step]')) button.disabled = button.dataset.step < 0 ? atStart : atEnd;
 }
 
 // 이전·다음: 한 쪽씩 보기에서는 펼친 면의 왼쪽 → 오른쪽 → 다음 페이지 순서로 넘깁니다.
@@ -339,11 +355,10 @@ function bindControls() {
   // 펼친 면이 없는 매뉴얼에서는 한 쪽씩 보기 버튼을 숨깁니다.
   $('#split').hidden = !book.pages.some(isSpread);
 
-  $('#prev').onclick = () => step(-1);
-  $('#next').onclick = () => step(1);
+  for (const button of document.querySelectorAll('[data-step]')) button.onclick = () => step(Number(button.dataset.step));
   $('#page').onchange = event => go(Number(event.target.value));
   $('#scrub').oninput = event => say(pageLabel(book.pages[event.target.value - 1], event.target.value - 1), { sticky: true });
-  $('#scrub').onchange = event => go(Number(event.target.value));
+  $('#scrub').onchange = event => { status.classList.add('quiet'); go(Number(event.target.value)); };
   $('#page-input').onchange = event => {
     const page = Number(event.target.value);
     if (Number.isInteger(page)) go(Math.min(total, Math.max(1, page)));
@@ -389,7 +404,7 @@ try {
     $('#collection').textContent = collection.titleEn;
   }
   const savedSplit = store.get('manual.split');
-  split = savedSplit ? savedSplit === 'on' : phone.matches;
+  split = savedSplit ? savedSplit === 'on' : phone.matches || matchMedia('(orientation: portrait)').matches;
   $('#title').textContent = book.title;
   $('#edition').textContent = `${book.platform} · ${book.sourceEdition} 기준 · ${book.pageCount}페이지${book.appendixCount ? ` (부록 ${book.appendixCount} 포함)` : ''}`;
   buildThumbs();
